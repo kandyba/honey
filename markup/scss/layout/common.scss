@@ -114,6 +114,7 @@
   margin:0 0 15px;
   #main & {
     width:100%;
+    float:none;
   }
   .select-box{
     background:$base-white-color;
@@ -660,7 +661,7 @@
     }
   }
   .title-block{
-    margin:0 0 8px;
+    margin:0 0 12px;
     overflow:hidden;
     line-height:24px;
   }
@@ -935,6 +936,9 @@
       display: inline;
     }
   }
+  strong{
+    color:#000;
+  }
 }
 
 .info-block{
@@ -1155,6 +1159,23 @@ h6{
   }
   .text{
     overflow:hidden;
+    dl{
+      margin:0 0 10px;
+      dt{
+        font-weight:bold;
+        float:left;
+        margin:0 5px 0 0;
+        color:#000;
+      }
+      dd{
+        overflow:hidden;
+        color: #20c6ca;
+        margin:0 0 6px;
+        a{
+          font-weight:bold;
+        }
+      }
+    }
   }
   .img-block{
     float:left;

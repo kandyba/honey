@@ -732,6 +732,7 @@ textarea {
 }
 #main .search-form {
   width: 100%;
+  float: none;
 }
 .search-form .select-box {
   background: #fff;
@@ -1274,7 +1275,7 @@ textarea {
   font-weight: bold;
 }
 #main .title-block {
-  margin: 0 0 8px;
+  margin: 0 0 12px;
   overflow: hidden;
   line-height: 24px;
 }
@@ -1542,6 +1543,9 @@ textarea {
 .agent-block .info-box .check {
   display: inline;
 }
+.agent-block strong {
+  color: #000;
+}
 
 .info-block {
   color: #000;
@@ -1768,6 +1772,23 @@ h6 span {
 }
 .agent-block .text {
   overflow: hidden;
+}
+.agent-block .text dl {
+  margin: 0 0 10px;
+}
+.agent-block .text dl dt {
+  font-weight: bold;
+  float: left;
+  margin: 0 5px 0 0;
+  color: #000;
+}
+.agent-block .text dl dd {
+  overflow: hidden;
+  color: #20c6ca;
+  margin: 0 0 6px;
+}
+.agent-block .text dl dd a {
+  font-weight: bold;
 }
 .agent-block .img-block {
   float: left;
@@ -2519,7 +2540,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
   background: #fff;
   border: 1px solid #9d9d9d;
   border-radius: 9px;
-  margin: 2px 3px 0 0;
+  margin: 4px 3px 0 0;
   height: 14px;
   width: 14px;
 }
@@ -4041,3 +4062,5 @@ body > .jcf-select-drop.jcf-drop-flipped {
     margin: 0 5px 5px 0;
   }
 }
+
+/*# sourceMappingURL=main.css.map */
