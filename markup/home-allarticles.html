@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>honey</title>
+    <link href="css/bootstrap.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/main.css" media="all" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,600italic,700,700italic" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <span class="xs-overlay"></span>
+      <header id="header">
+        <div class="container">
+          <div class="logo pull-left">
+            <div class="logo-box">
+              <a href="#"><img alt="honey" src="images/logo.png"></a>
+              <button type="button" class="country" data-toggle="modal" data-target="#myModal3">
+                <div class="img-box">
+                  <img src="images/ukr.png" alt="image description">
+                </div>
+                <span class="name">Украина</span>
+                <i class="icon-down-open"></i>
+              </button>
+              <div class="modal fade modal-size2" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                      <h4 class="text-center">Выберите страну</h4>
+                        <form action="#">
+                          <ul class="country-list">
+                            <li>
+                              <label for="ukraine">
+                                <div class="img-box">
+                                  <img src="images/ukraine.png" alt="ukraine">
+                                </div>
+                                <div>
+                                  <input id="ukraine" type="radio" name="group" checked>
+                                      Украина
+                                </div>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="russian">
+                                <img src="images/russian.png" alt="russian">
+                                <div>
+                                  <input id="russian" type="radio" name="group">
+                                      Россия
+                                </div>
+                              </label>
+                            </li>
+                          </ul>
+                        </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="nav-opener" href="#"><span></span></a>
+          <div class="popup-holder">
+            <nav id="nav">
+              <ul>
+                <li><a href="#">Персонал</a></li>
+                <li class="active"><a href="#">Вакансии</a></li>
+                <li><a href="#">Агентства</a></li>
+                <li><a href="#">Черный список</a></li>
+                <li><a href="#">Советы</a></li>
+              </ul>
+            </nav>
+          </div>
+          <button type="button" class="btn pull-right" data-toggle="modal" data-target="#myModal">Войти</button>
+          <div class="modal fade modal-size2" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                  <h4 class="text-center">Вход на сайт</h4>
+                  <div class="modal-form">
+                    <div class="form-group">
+                      <input type="email" placeholder="E-mail">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" placeholder="Пароль">
+                    </div>
+                    <div class="form-group checkbox">
+                      <input id="remember" type="checkbox" checked>
+                      <label for="remember">Запомнить меня</label>
+                    </div>
+                    <div class="form-group">
+                      <button class="btn large" type="submit">Войти</button>
+                    </div>
+                    <div class="form-group">
+                      <div class="pull-left">
+                        <a href="#">Забыли пароль?</a>
+                      </div>
+                      <div class="pull-right">
+                        <a href="#">Еще не зарегистрированы?</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container container-area">
+        <main role="main" id="main">
+          <aside id="sidebar">
+            <div class="side-box">
+              <div class="box">
+                <h3>Рубрики</h3>
+                <ul>
+                  <li><a href="#">О нянях и гувернантках - <strong>5</strong></a></li>
+                  <li><a href="#">Уроки для нянь и гувернанток - <strong>11</strong></a></li>
+                  <li><a href="#">О домработницах и уходе за домом - <strong>8</strong></a></li>
+                  <li><a href="#">О сиделках и уходе за больными - <strong>1</strong></a></li>
+                  <li><a href="#">О садовниках, хозяйственниках - <strong>3</strong></a></li>
+                  <li><a href="#">Новости рынка домашнего персонала - <strong>4</strong></a></li>
+                  <li><a href="#">Советы работодателям - <strong>5</strong></a></li>
+                  <li><a href="#">Советы соискателям (работникам) - <strong>4</strong></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="side-box">
+              <div class="box">
+                <strong><a href="#">Анна Терехова 17.05.2015, в 20:07:30</a></strong>
+                <p>- Конечно няня должна знать современные методики и составить программу по развитию, утвердить с мамой эту программу и заниматься. А зачем еще нужна няня?</p>
+                <p><a href="#">к записи «Что требуют современные мамы от нянь?</a></p>
+              </div>
+              <div class="box">
+                <strong><a href="#">Инна Изварина 28.04.2015, в 10:54:32</a></strong>
+                <p>- Какие то няни, не совсем с мозгами!!! И их еще берут на работу!</p>
+                <p><a href="#">к записи «Читать няням!! Ошибки нянь. Письма родителей»</a></p>
+              </div>
+              <div class="box">
+                <strong><a href="#">Инна Изварина 28.04.2015, в 10:53:32</a></strong>
+                <p>- На самом деле очень полезно знать, что мамы требуют о няни. Идешь устраиваться и не понимаешь, что мама на самом деле может попросить тебя и спеть и стих рассказать, как то об этом и не думаешь)</p>
+                <p><a href="#">к записи «Что требуют современные мамы от нянь?»</a></p>
+              </div>
+            </div>
+            <div class="side-box">
+              <div class="img-box">
+                <img src="images/img-11.jpg" alt="image description">
+              </div>
+              <h3>Для работы в семьях требуются няни!</h3>
+              <p>Здесь идет текст объявления агентства. Здесь идет текст объявления агентства. </p>
+              <a href="#" class="btn">Подробнее</a>
+            </div>
+          </aside>
+          <div id="content">
+            <div class="holder">
+              <article class="info-block block2">
+                <div class="img-area">
+                  <img src="images/img-12.jpg" alt="image description">
+                </div>
+                <h2 class="text-center">Квалификация домработницы.<br> Виды домработниц</h2>
+                <p>Существует условное деление домработниц на три вида: профессиональные — они всё время повышают уровень своих умений и навыков, читают соответствующую литературу или же посещают специальные курсы... <a href="#">(далее)</a></p>
+                <div class="foot-area">
+                  <a href="#" class="btn ye-btn pull-left">Подробнее</a>
+                  <a class="comment pull-right" href="#">1 комментарий</a>
+                </div>
+              </article>
+              <article class="info-block">
+                <div class="img-area">
+                  <img src="images/img-13.jpg" alt="image description">
+                </div>
+                <h2 class="text-center">Средства бытовой химии</h2>
+                <blockquote>
+                  <q>…но можно запачкать всё, ничего не отчистив.</q>
+                  <cite>Расширение Фримена.</cite>
+                </blockquote>
+                <p>Прежде, чем отдать предпочтение тому или иному средству... <a href="#">(далее)</a></p>
+                <div class="foot-area">
+                  <a href="#" class="btn ye-btn pull-left">Подробнее</a>
+                  <a class="comment pull-right" href="#">0 комментарий</a>
+                </div>
+              </article>
+              <article class="info-block">
+                <div class="img-area">
+                  <img src="images/img-14.jpg" alt="image description">
+                </div>
+                <h2 class="text-center">Первое свидание няни с работодателем:<br> как поступить на должность няни?</h2>
+                <p>Итак, Вы няня или гувернантка, которая ищет работу. Вас пригласили на собеседование. Как подготовиться к предстоящей встрече? Как себя вести так, чтобы повысить  шансы и не потерять лицо в беседе... <a href="#">(далее)</a></p>
+                <div class="foot-area">
+                  <a href="#" class="btn ye-btn pull-left">Подробнее</a>
+                  <a class="comment pull-right" href="#">2 комментарий</a>
+                </div>
+              </article>
+              <article class="info-block">
+                <div class="img-area">
+                  <img src="images/img-15.jpg" alt="image description">
+                </div>
+                <h2 class="text-center">Смена постельного белья лежачего <br> больного. Видеоурок</h2>
+                <p>По мере загрязнения постели или после мытья пациента в постели и промокания нижней прость ни необходимо ее сменить. Простыни и наволочк на постели тяжелобольного не должны иметь гр бых швов, рубцов...  <a href="#">(далее)</a></p>
+                <div class="foot-area">
+                  <a href="#" class="btn ye-btn pull-left">Подробнее</a>
+                  <a class="comment pull-right" href="#">3 комментарий</a>
+                </div>
+              </article>
+              <article class="info-block">
+                <div class="img-area">
+                  <img src="images/img-16.jpg" alt="image description">
+                </div>
+                <h2 class="text-center">Правила ухода за акссесуарами и обувью <br> (лак, замша, кожа)</h2>
+                <p>Каждый день в процессе носки обувь подвергается вредным воздействиям внешней среды: вода, грязь, перепады температур, пыль. А обуви, которую носят, приходится выдерживать ещё и мороз. Если не обеспечить...  <a href="#">(далее)</a></p>
+                <div class="foot-area">
+                  <a href="#" class="btn ye-btn pull-left">Подробнее</a>
+                  <a class="comment pull-right" href="#">1 комментарий</a>
+                </div>
+              </article>
+              <div class="pagination-box">
+                <nav  class="pagination">
+                  <ul>
+                    <li>
+                      <a href="#" aria-label="Previous">
+                        <i class="icon-left-open-1"></i>
+                      </a>
+                    </li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">8</a></li>
+                    <li><a href="#">9</a></li>
+                    <li><a href="#">10</a></li>
+                    <li><a href="#">11</a></li>
+                    <li>
+                      <a href="#" aria-label="Next">
+                        <i class="icon-right-open-1"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <footer id="footer">
+        <div class="container">
+          <div class="footer-cont">
+            <ul class="footer-block">
+              <li class="col">
+                <ul>
+                  <li><a href="#">Нанимателю</a></li>
+                  <li><a href="#">Соискателю</a></li>
+                  <li><a href="#">Агенствам</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">О сервисе</a></li>
+                  <li><a href="#">Реклама на сайте</a></li>
+                  <li><a href="#">Контакты</a></li>
+                  <li><a href="#">Условия использования</a></li>
+                </ul>
+              </li>
+              <li class="col">
+                <ul>
+                  <li><a href="#">Работа няней</a></li>
+                  <li><a href="#">Работа домработницей</a></li>
+                  <li><a href="#">Работа сиделкой</a></li>
+                  <li><a href="#">Работа водителем</a></li>
+                  <li><a href="#">Работа садовником</a></li>
+                  <li><a href="#">Работа репетитором</a></li>
+                  <li><a href="#">Работа поваром</a></li>
+                  <li><a href="#">Работа охранником</a></li>
+                  <li><a href="#">Работа управляющим дома</a></li>
+                </ul>
+              </li>
+              <li class="col">
+                <ul>
+                  <li><a href="#">Няня без посредников</a></li>
+                  <li><a href="#">Домработница без посредников</a></li>
+                  <li><a href="#">Сиделка без посредников</a></li>
+                  <li><a href="#">Домашний повар в семью</a></li>
+                  <li><a href="#">Садовник, хозяйственник</a></li>
+                  <li><a href="#">Управляющий домом</a></li>
+                  <li><a href="#">Услуги репетитора</a></li>
+                  <li><a href="#">Охранники</a></li>
+                  <li><a href="#">Личный, семейный водитель</a></li>
+                </ul>
+              </li>
+              <li class="col-text">
+                <p> <a href="#">Homey.com.ua</a> - надёжный сервис для поиска домашнего персонала в Украине без посредников. Здесь вы можете подобрать помошника самостоятельно - няню для ребёнка, домработницу, семейного водителя, сиделку, садовника, охранника и управляющего домом. Публикуйте свои вакансии и связывайтесь с прямым работодателем бесплатно.</p>
+                <p> <a href="#">Homey.com.ua.</a> - это бесплатный сервис для поиска работы в качестве няни, домработницы, сиделки, водителя, садовника В Киеве, Одессе, Харькове, Днепропетровске, Запорожье и других городах Украины. Публикуйте своё резюме и связывайтесь с прямым работодателем бесплатно.</p>
+              </li>
+            </ul>
+            <button type="button" class="btn empty" data-toggle="modal" data-target="#myModal2">Помощь</button>
+            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                  </div>
+                  <div class="modal-body">
+                    <h4 class="text-center">Обратная связь</h4>
+                    <div class="modal-form">
+                    <p class="text-center">Задайте интересующий вас вопрос, и  мы вышлем письмо с ответом на ваш e-mail  в течение ? часов</p>
+                      <div class="form-group">
+                        <input type="email" placeholder="E-mail">
+                        <div class="invalid-massege">Невалидный имейл</div>
+                      </div>
+                      <div class="form-group">
+                        <textarea cols="3" rows="2" placeholder="Текст сообщения"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <a href="#" class="btn large">Отправить</a>
+                      </div>
+                      <div class="text-center"><a href="#">Уже зарегестрированы?</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="footer-box">
+            <ul class="social-list">
+              <li><a href="#"><img src="images/facebook.png" alt="vk"></a></li>
+              <li><a href="#"><img src="images/twitter.png" alt="vk"></a></li>
+              <li><a href="#"><img src="images/google.png" alt="vk"></a></li>
+              <li><a href="#"><img src="images/vk.png" alt="vk"></a></li>
+            </ul>
+            <p class="text-center">© 2009-2015 <a href="#">Homey.com.ua</a></p>
+          </div>
+        </div>
+        <a href="#" id="scroller"><i class="icon-up-small"></i></a>
+      </footer>
+    </div>
+    <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="js/jquery.main.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/masonry-docs.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      if (navigator.userAgent.match(/IEMobile/10.0/)  navigator.userAgent.match(/MSIE 10.*Touch/)) {
+      var msViewportStyle = document.createElement('style')
+      msViewportStyle.appendChild(
+      document.createTextNode(
+      '@-ms-viewport{width:auto !important}'))
+      document.querySelector('head').appendChild(msViewportStyle)}
+    </script>
+  </body>
+</html>

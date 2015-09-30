@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>honey</title>
+    <link href="css/bootstrap.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/main.css" media="all" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,600italic,700,700italic" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <span class="xs-overlay"></span>
+      <header id="header">
+        <div class="container">
+          <div class="logo pull-left">
+            <div class="logo-box">
+              <a href="#"><img alt="honey" src="images/logo.png"></a>
+              <button type="button" class="country" data-toggle="modal" data-target="#myModal3">
+                <div class="img-box">
+                  <img src="images/ukr.png" alt="image description">
+                </div>
+                <span class="name">Украина</span>
+                <i class="icon-down-open"></i>
+              </button>
+              <div class="modal fade modal-size2" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                      <h4 class="text-center">Выберите страну</h4>
+                        <form action="#">
+                          <ul class="country-list">
+                            <li>
+                              <label for="ukraine">
+                                <div class="img-box">
+                                  <img src="images/ukraine.png" alt="ukraine">
+                                </div>
+                                <div>
+                                  <input id="ukraine" type="radio" name="group" checked>
+                                      Украина
+                                </div>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="russian">
+                                <img src="images/russian.png" alt="russian">
+                                <div>
+                                  <input id="russian" type="radio" name="group">
+                                      Россия
+                                </div>
+                              </label>
+                            </li>
+                          </ul>
+                        </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="nav-opener" href="#"><span></span></a>
+          <div class="popup-holder">
+            <nav id="nav">
+              <ul>
+                <li><a href="#">Персонал</a></li>
+                <li class="active"><a href="#">Вакансии</a></li>
+                <li><a href="#">Агентства</a></li>
+                <li><a href="#">Черный список</a></li>
+                <li><a href="#">Советы</a></li>
+              </ul>
+            </nav>
+          </div>
+          <button type="button" class="btn pull-right" data-toggle="modal" data-target="#myModal">Войти</button>
+          <div class="modal fade modal-size2" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                  <h4 class="text-center">Вход на сайт</h4>
+                  <div class="modal-form">
+                    <div class="form-group">
+                      <input type="email" placeholder="E-mail">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" placeholder="Пароль">
+                    </div>
+                    <div class="form-group checkbox">
+                      <input id="remember" type="checkbox" checked>
+                      <label for="remember">Запомнить меня</label>
+                    </div>
+                    <div class="form-group">
+                      <button class="btn large" type="submit">Войти</button>
+                    </div>
+                    <div class="form-group">
+                      <div class="pull-left">
+                        <a href="#">Забыли пароль?</a>
+                      </div>
+                      <div class="pull-right">
+                        <a href="#">Еще не зарегистрированы?</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container container-area">
+        <main role="main" id="main">
+          <aside id="sidebar">
+            <div class="side-box">
+              <h3 class="text-center">Зарегистрируйтесь!</h3>
+              <p>Только зарегистрированные пользователи могут получить доступ к контактам нанимателей и добавить вакансии</p>
+              <a href="#" class="btn green">Зарегистрироваться</a>
+            </div>
+            <div class="side-box">
+              <div class="img-box">
+                <img src="images/img-11.jpg" alt="image description">
+              </div>
+              <h3 class="text-center">Для работы в семьях требуются няни!</h3>
+              <p>Здесь идет текст объявления агентства. Здесь идет текст объявления агентства. </p>
+              <a href="#" class="btn blue">Подробнее</a>
+            </div>
+            <div class="side-box">
+              <h3 class="text-center">Горячие вакансии</h3>
+              <ul class="box-list">
+                <li>
+                  <div class="top-box">
+                    <div class="img-block">
+                      <a href="#"><img alt="image description" src="images/partner-6.png"></a>
+                    </div>
+                    <time datetime="2015-09-22">22 сентября</time>
+                  </div>
+                  <P><strong>Нужна домработница для уборки квартиры</strong></P>
+                  <p>(Днепропетровск)</p>
+                  <span class="price">18500 грн/месяц</span>
+                </li>
+                <li>
+                  <div class="top-box">
+                    <div class="img-block">
+                      <a href="#"><img alt="image description" src="images/partner-6.png"></a>
+                    </div>
+                    <time datetime="2015-09-22">22 сентября</time>
+                  </div>
+                  <P><strong>Нужна домработница для уборки квартиры</strong></P>
+                  <p>(Днепропетровск)</p>
+                  <span class="price">18500 грн/месяц</span>
+                </li>
+                <li>
+                  <div class="top-box">
+                    <div class="img-block">
+                      <a href="#"><img alt="image description" src="images/partner-6.png"></a>
+                    </div>
+                    <time datetime="2015-09-22">22 сентября</time>
+                  </div>
+                  <P><strong>Нужна домработница для уборки квартиры</strong></P>
+                  <p>(Днепропетровск)</p>
+                  <span class="price">18500 грн/месяц</span>
+                </li>
+              </ul>   
+            </div>
+            <div class="side-box"> 
+              <h3 class="text-center">Категории</h3>
+              <ul>
+                <li><a href="#">Работа няней</a></li>
+                <li><a href="#">Работа домработницей</a></li>
+                <li><a href="#">Работа сиделкой</a></li>
+                <li><a href="#">Работа няней</a></li>
+                <li><a href="#">Работа домработницей</a></li>
+                <li><a href="#">Работа сиделкой</a></li>
+                <li><a href="#">Работа няней</a></li>
+                <li><a href="#">Работа домработницей</a></li>
+                <li><a href="#">Работа сиделкой</a></li>
+                <li><a href="#">Работа няней</a></li>
+                <li><a href="#">Работа домработницей</a></li>
+              </ul>
+            </div>
+            <div class="side-box">
+              <h3 class="text-center">Популярные города</h3>
+              <ul>
+                <li><a href="#">Киев</a></li>
+                <li><a href="#">Днепропетровск</a></li>
+                <li><a href="#">Кривой рог</a></li>
+                <li><a href="#">Запорожь</a></li>
+                <li><a href="#">Льов</a></li>
+                <li><a href="#">Одесса</a></li>
+                <li><a href="#">Донецк</a></li>
+                <li><a href="#">Харьков</a></li>
+                <li><a href="#">Украина</a></li>
+                <li><a href="#">Донецк</a></li>
+                <li><a href="#">Харьков</a></li>
+              </ul>
+            </div>
+            <div class="side-box">
+              <div class="img-box">
+                <img src="images/img-11.jpg" alt="image description">
+              </div>
+              <h3 class="text-center">Для работы в семьях требуются няни!</h3>
+              <p>Здесь идет текст объявления агентства. Здесь идет текст объявления агентства. </p>
+              <a href="#" class="btn blue">Подробнее</a>
+            </div>
+          </aside>
+          <div id="content">
+            <div class="holder">
+              <h1>Я хочу найти:</h1>
+              <div class="search-form">
+                <form action="#">
+                  <fieldset>
+                    <div class="select-box">
+                      <i class="icon-briefcase"></i>
+                      <select>
+                        <option>Должность</option>
+                        <option>Домработница</option>
+                        <option>Повар</option>
+                        <option>Няня/гувернантка</option>
+                        <option>Сиделка</option>
+                        <option>Садовник/хозяйственник</option>
+                        <option>Водитель</option>
+                        <option>Управляющий домом</option>
+                        <option>Репетитор</option>
+                        <option>Охранник</option>
+                      </select>
+                    </div>
+                    <div class="select-box">
+                      <i class="icon-location"></i>
+                      <select>
+                        <option>Вся Украина</option>
+                        <option>Киев</option>
+                        <option>Днепропетровск</option>
+                        <option>Кривой рог</option>
+                        <option>Запорожье</option>
+                        <option>Львов</option>
+                        <option>Одесса</option>
+                        <option>Донецк</option>
+                        <option>Харьков</option>
+                        <option>Другие страны</option>
+                        <option class="another">Другой регион</option>
+                      </select>
+                    </div>
+                    <button type="submit" class="btn red">Найти</button>
+                  </fieldset>
+                </form>
+              </div>
+              <p class="text-right"><a href="#">Расширенный поиск</a></p>
+              <div class="vacation-block alt">
+                <div class="ico-box">
+                  <i class="icon-briefcase"></i>
+                </div>
+                <div class="text-box text-left">
+                  <h4>Хотите найти работу?</h4>
+                  <p>Разместите свое резюме, чтобы работодатель мог напрямую связаться с вами и предложить вам работу</p><a class="btn ye-btn" href="#">Разместить резюме</a>
+                </div>
+              </div>
+              <strong class="title2">Найдено: <span>455 вакансий</span></strong>
+              <div class="agent-block">
+                <div class="img-block alt">
+                  <a href="#"><img alt="image description" src="images/partner-6.png"></a>
+                  <strong>Вакансия от кадрового агентства «Азбука семьи»</strong>
+                  <p>Вакансия размещена <time datetime="2015-08-23">23 августа 2015</time></p>
+                </div>
+                <div class="text">
+                  <div class="text-info">
+                    <h4>Требуется садовник по уходу за участком 30 соток</h4>
+                    <address>
+                      <strong class="city">Киев (Киевская область, Печерский)</strong>  
+                    </address>
+                    <span class="icon"><i class="icon-cog"></i>> 5 лет опыта</span>
+                  </div>
+                  <div class="info-box text-right">
+                    <h3>15000 грн/мес.</h3>
+                    <ul class="btn-list">
+                      <li><a href="#" class="btn ye-btn">Горячее</a></li>
+                      <li><a href="#" class="btn green">Новое</a></li>
+                    </ul>
+                  </div>
+                  <div class="wrap-box pull-left">
+                    <p><strong>Описание вакансии:</strong> “Водительское удостоверение категории "В.Стаж вождения 16 лет. Личным-семейным водителем 15 лет. Работал на автомобилях...” <a href="#">Подробнее</a></p>
+                    <ul class="btn-list">
+                      <li><a href="#" class="btn">Частный дом</a></li>
+                      <li><a href="#" class="btn">Квартира</a></li>
+                      <li><a href="#" class="btn">Посуточно</a></li>
+                    </ul>
+                    <a href="#" class="btn blue pull-right"><span>+</span>В избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="agent-block">
+                <div class="img-block alt">
+                  <a href="#"><img alt="image description" src="images/partner-2.png"></a>
+                  <strong>Вакансия от кадрового агентства «Хозяюшка»</strong>
+                  <p>Вакансия размещена <time datetime="2015-08-23">23 августа 2015</time></p>
+                </div>
+                <div class="text">
+                  <div class="text-info">
+                    <h4>Нужна няня для девочки 4 лет, стоянка</h4>
+                    <address>
+                      <strong class="city">Киев (Киевская область, Печерский)</strong>  
+                    </address>
+                    <span class="icon"><i class="icon-cog"></i>> 5 лет опыта</span>
+                  </div>
+                  <div class="info-box text-right">
+                    <h3>13000 грн/мес.</h3>
+                    <ul class="btn-list">
+                      <li><a href="#" class="btn green">Новое</a></li>
+                    </ul>
+                  </div>
+                  <div class="wrap-box pull-left">
+                    <p><strong>Описание вакансии:</strong> “Нужна няня для девочки 4 лет, Работа в Киеве, с.Стоянка. График 5/2 без проживания Оплата: 13000 грн за месяц. Знаниеанглийского и французского языка. Обязанности...”  <a href="#">Подробнее</a></p>
+                    <ul class="btn-list">
+                      <li><a href="#" class="btn">Частный дом</a></li>
+                      <li><a href="#" class="btn">Квартира</a></li>
+                      <li><a href="#" class="btn">Посуточно</a></li>
+                    </ul>
+                    <a href="#" class="btn blue pull-right"><span>+</span>В избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="agent-block">
+                <div class="img-block alt">
+                  <a href="#"><img alt="image description" src="images/partner-6.png"></a>
+                  <strong>Вакансия от кадрового агентства «Азбука семьи»</strong>
+                  <p>Вакансия размещена <time datetime="2015-08-23">23 августа 2015</time></p>
+                  <span class="check">Проверенное агентство</span>
+                </div>
+                <div class="text">
+                  <div class="text-info">
+                    <h4>Домработница 2 дня в неделю</h4>
+                    <address>
+                      <strong class="city">Киев (Киевская область, Печерский)</strong>  
+                    </address>
+                    <span class="icon"><i class="icon-cog"></i>> 5 лет опыта</span>
+                  </div>
+                  <div class="info-box text-right">
+                    <h3>500 грн/мес.</h3>
+                    <ul class="btn-list">
+                      <li><a href="#" class="btn ye-btn">Горячее</a></li>
+                      <li><a href="#" class="btn green">Новое</a></li>
+                    </ul>
+                  </div>
+                  <div class="wrap-box pull-left">
+                    <p><strong>Описание вакансии:</strong> “Требуется домработница для уборки квартиры 120 кв.м. Место работы: г. Киев, Нивки, Работа 2 дня в неделю, нужно убрать, загрузить вещи в стиральную машину, погладить вещи. 500 грн/день...”  <a href="#">Подробнее</a></p>
+                    <ul class="btn-list">
+                      <li><a href="#" class="btn">Частный дом</a></li>
+                      <li><a href="#" class="btn">Квартира</a></li>
+                      <li><a href="#" class="btn">Посуточно</a></li>
+                    </ul>
+                    <a href="#" class="btn blue pull-right"><span>+</span>В избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="agent-block">
+                <div class="img-block alt">
+                  <a href="#"><img alt="image description" src="images/no-photo.png"></a>
+                  <strong>Вакансия от частного лица</strong>
+                  <p>Вакансия размещена <time datetime="2015-08-23">23 августа 2015</time></p>
+                </div>
+                <div class="text">
+                  <div class="text-info">
+                    <h4>Домработница 2 дня в неделю</h4>
+                    <address>
+                      <strong class="city">Киев (Киевская область, Печерский)</strong>  
+                    </address>
+                    <span class="icon"><i class="icon-cog"></i>> 5 лет опыта</span>
+                  </div>
+                  <div class="info-box text-right">
+                    <h3>15000 грн/мес.</h3>
+                    <ul class="btn-list">
+                      <li><a href="#" class="btn green">Новое</a></li>
+                    </ul>
+                  </div>
+                  <div class="wrap-box pull-left">
+                    <p><strong>Описание вакансии:</strong> “Ищем репетиторов английского языка для работы в семьях, с детьми разного возраста Заработная плата от 80 до 200 грн/час Работа по всем районам Киева и Киевской области Рассматриваются кандидаты с опытом и без опыта работы! ...” <a href="#">Подробнее</a></p>
+                    <ul class="btn-list">
+                      <li><a href="#" class="btn">Частный дом</a></li>
+                    </ul>
+                    <a href="#" class="btn blue pull-right"><span>+</span>В избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="agent-block">
+                <div class="img-block alt">
+                  <a href="#"><img alt="image description" src="images/partner-6.png"></a>
+                  <strong>Вакансия от кадрового агентства «Азбука семьи»</strong>
+                  <p>Вакансия размещена <time datetime="2015-08-23">23 августа 2015</time></p>
+                </div>
+                <div class="text">
+                  <div class="text-info">
+                    <h4>Водитель на своем автомобиле представительского класса</h4>
+                    <address>
+                      <strong class="city">Киев (Киевская область, Печерский)</strong>  
+                    </address>
+                    <span class="icon"><i class="icon-cog"></i>> 5 лет опыта</span>
+                  </div>
+                  <div class="info-box text-right">
+                    <h3>20000 грн/мес.</h3>
+                    <ul class="btn-list">
+                      <li><a href="#" class="btn green">Новое</a></li>
+                    </ul>
+                  </div>
+                  <div class="wrap-box pull-left">
+                    <p><strong>Описание вакансии:</strong> “Водительское удостоверение категории "В.Стаж вождения 16 лет...” <a href="#">Подробнее</a></p>
+                    <ul class="btn-list">
+                      <li><a href="#" class="btn">Частный дом</a></li>
+                      <li><a href="#" class="btn">Квартира</a></li>
+                      <li><a href="#" class="btn">Посуточно</a></li>
+                      <li><a href="#" class="btn">Квартира</a></li>
+                      <li><a href="#" class="btn">Посуточно</a></li>
+                      <li><a href="#" class="btn">Квартира</a></li>
+                      <li><a href="#" class="btn">Посуточно</a></li>
+                    </ul>
+                    <a href="#" class="btn blue pull-right"><span>+</span>В избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="pagination-box">
+                <nav  class="pagination">
+                  <ul>
+                    <li>
+                      <a href="#" aria-label="Previous">
+                        <i class="icon-left-open-1"></i>
+                      </a>
+                    </li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">8</a></li>
+                    <li><a href="#">9</a></li>
+                    <li><a href="#">10</a></li>
+                    <li><a href="#">11</a></li>
+                    <li>
+                      <a href="#" aria-label="Next">
+                        <i class="icon-right-open-1"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="holder">
+              <div class="vacation-block alt">
+                <div class="ico-box">
+                  <i><img src="images/clock-ico1.png" alt="image description"></i>
+                </div>
+                <div class="text-box text-left">
+                  <h4>Некогда просматривать анкеты? </h4>
+                  <p>Бесплатно разместите вакансию и выбирайте помощников среди откликнувшихся соискателей!</p><a class="btn ye-btn" href="#">Разместить вакансию</a>
+                </div>
+              </div>
+              <h2>Большой выбор работы в Киеве</h2>
+              <p>Ежедневно в Киеве осуществляются тысячи пассажирских перевозок: регулярных, специальных, разовых. Актуальность услуги всегда высокая, поэтому количество предложений на этом рынке достаточно большое. Остается лишь одна проблема: как заказать пассажирские перевозки в Киеве на выгодных условиях, чтобы стоимость и качество соответствовали ожиданиям?</p>
+              <p>Лучший выход из ситуации – заказ перевозки напрямую у исполнителя (водителя или транспортной компании). Для понимания ситуации, следует знать, что в нашей стране пассажирские перевозки официально делят на:регулярные – курсирование транспорта по утвержденным маршрутам с согласованным графиком движения; егулярные специальные</p>
+            </div>
+          </div>
+        </main>
+      </div>
+      <footer id="footer">
+        <div class="container">
+          <div class="footer-cont">
+            <ul class="footer-block">
+              <li class="col">
+                <ul>
+                  <li><a href="#">Нанимателю</a></li>
+                  <li><a href="#">Соискателю</a></li>
+                  <li><a href="#">Агенствам</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">О сервисе</a></li>
+                  <li><a href="#">Реклама на сайте</a></li>
+                  <li><a href="#">Контакты</a></li>
+                  <li><a href="#">Условия использования</a></li>
+                </ul>
+              </li>
+              <li class="col">
+                <ul>
+                  <li><a href="#">Работа няней</a></li>
+                  <li><a href="#">Работа домработницей</a></li>
+                  <li><a href="#">Работа сиделкой</a></li>
+                  <li><a href="#">Работа водителем</a></li>
+                  <li><a href="#">Работа садовником</a></li>
+                  <li><a href="#">Работа репетитором</a></li>
+                  <li><a href="#">Работа поваром</a></li>
+                  <li><a href="#">Работа охранником</a></li>
+                  <li><a href="#">Работа управляющим дома</a></li>
+                </ul>
+              </li>
+              <li class="col">
+                <ul>
+                  <li><a href="#">Няня без посредников</a></li>
+                  <li><a href="#">Домработница без посредников</a></li>
+                  <li><a href="#">Сиделка без посредников</a></li>
+                  <li><a href="#">Домашний повар в семью</a></li>
+                  <li><a href="#">Садовник, хозяйственник</a></li>
+                  <li><a href="#">Управляющий домом</a></li>
+                  <li><a href="#">Услуги репетитора</a></li>
+                  <li><a href="#">Охранники</a></li>
+                  <li><a href="#">Личный, семейный водитель</a></li>
+                </ul>
+              </li>
+              <li class="col-text">
+                <p> <a href="#">Homey.com.ua</a> - надёжный сервис для поиска домашнего персонала в Украине без посредников. Здесь вы можете подобрать помошника самостоятельно - няню для ребёнка, домработницу, семейного водителя, сиделку, садовника, охранника и управляющего домом. Публикуйте свои вакансии и связывайтесь с прямым работодателем бесплатно.</p>
+                <p> <a href="#">Homey.com.ua.</a> - это бесплатный сервис для поиска работы в качестве няни, домработницы, сиделки, водителя, садовника В Киеве, Одессе, Харькове, Днепропетровске, Запорожье и других городах Украины. Публикуйте своё резюме и связывайтесь с прямым работодателем бесплатно.</p>
+              </li>
+            </ul>
+            <button type="button" class="btn empty" data-toggle="modal" data-target="#myModal2">Помощь</button>
+            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                  </div>
+                  <div class="modal-body">
+                    <h4 class="text-center">Обратная связь</h4>
+                    <div class="modal-form">
+                    <p class="text-center">Задайте интересующий вас вопрос, и  мы вышлем письмо с ответом на ваш e-mail  в течение ? часов</p>
+                      <div class="form-group">
+                        <input type="email" placeholder="E-mail">
+                        <div class="invalid-massege">Невалидный имейл</div>
+                      </div>
+                      <div class="form-group">
+                        <textarea cols="3" rows="2" placeholder="Текст сообщения"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <a href="#" class="btn large">Отправить</a>
+                      </div>
+                      <div class="text-center"><a href="#">Уже зарегестрированы?</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="footer-box">
+            <ul class="social-list">
+              <li><a href="#"><img src="images/facebook.png" alt="vk"></a></li>
+              <li><a href="#"><img src="images/twitter.png" alt="vk"></a></li>
+              <li><a href="#"><img src="images/google.png" alt="vk"></a></li>
+              <li><a href="#"><img src="images/vk.png" alt="vk"></a></li>
+            </ul>
+            <p class="text-center">© 2009-2015 <a href="#">Homey.com.ua</a></p>
+          </div>
+        </div>
+        <a href="#" id="scroller"><i class="icon-up-small"></i></a>
+      </footer>
+    </div>
+    <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="js/jquery.main.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/masonry-docs.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      if (navigator.userAgent.match(/IEMobile/10.0/)  navigator.userAgent.match(/MSIE 10.*Touch/)) {
+      var msViewportStyle = document.createElement('style')
+      msViewportStyle.appendChild(
+      document.createTextNode(
+      '@-ms-viewport{width:auto !important}'))
+      document.querySelector('head').appendChild(msViewportStyle)}
+    </script>
+  </body>
+</html>

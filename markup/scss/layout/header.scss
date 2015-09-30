@@ -1,0 +1,83 @@
+#header{
+  background:$blue-color;
+  padding:20px 0;
+  a{
+    color:#fff;
+  }
+  .logo{
+    margin:0 20px 0 0;
+  }
+  .logo-box{
+    position:relative;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .nav-opener{
+    display:none;
+    @include breakpoint($mobile){
+      display:block;
+    }
+  }
+  .container{
+    position:relative;
+  }
+  .country{
+    position:absolute;
+    top:-11px;
+    right:-12px;
+    z-index:5;
+    background:none;
+    border:none;
+    color:#fff;
+    font-size:11px;
+    font-weight:bold;
+    line-height:15px;
+    @include breakpoint($tablet){
+      top:-8px;
+    }
+    .img-box{
+      float:left;
+      margin:1px 5px 0 0;
+      overflow:hidden;
+      border-radius:50%;
+    }
+    i{
+      display: inline-block;
+      vertical-align: top;
+    }
+    .name{
+      text-decoration:underline;
+    }
+    &:hover{
+      .name{
+        text-decoration:none;
+      }
+    }
+  }
+}
+#nav{
+  text-align:center;
+  padding:12px 0 0;
+  &:after{
+    content:'';
+    display:block;
+    clear:both;
+  }
+  li{
+    display: inline-block;
+    vertical-align: top;
+    margin:0 12px 0 12px;
+    font-weight:bold;
+    &.active{
+      a{
+        opacity: 0.6;
+      }
+    }
+  }
+  a{
+    color:$base-white-color;
+    &:hover{
+      opacity: 0.6;
+    }
+  }
+}

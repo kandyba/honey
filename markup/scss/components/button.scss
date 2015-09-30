@@ -1,0 +1,62 @@
+.btn{
+  background:$blue-daker-color;
+  color:$base-white-color;
+  font-weight:bold;
+  padding:9px 34px;
+  white-space: normal;
+  #header & {
+    padding:9px 30px;
+  }
+  &:hover{
+    color:$base-white-color;
+    opacity: 0.75;
+  }
+  &.empty{
+    background:none;
+    border:2px solid $base-white-color;
+    &:hover{
+      border-color: $base-black-color;
+    }
+  }
+  &.red{
+    background:#f5483a;
+  }
+  &.green{
+    background:#32bc0d;
+  }
+  &.large{
+    width:100%;
+  }
+  &.blue{
+    background: #20c6ca;
+  }
+}
+
+.ye-btn{
+  background:$yellow;
+  &:hover{
+    color:$base-white-color;
+    opacity: 0.75;
+  }
+}
+
+#scroller{
+  background:$yellow;
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  color:$base-white-color;
+  font-size:30px;
+  border-radius:4px;
+  position:fixed;
+  bottom:30px;
+  right: 30px;
+  text-align:center;
+  display:none;
+  z-index:9999;
+  i{
+    display: inline-block;
+    vertical-align: top;
+    margin:1px 0 0 -1px;
+  }
+}
