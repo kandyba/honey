@@ -1721,9 +1721,6 @@ textarea {
 .info-list {
   padding: 0 0 0 30px;
 }
-.info-list .text-red {
-  color: #f5483a;
-}
 .info-list div {
   margin: 0 0 15px;
   position: relative;
@@ -2915,6 +2912,9 @@ body > .jcf-select-drop.jcf-drop-flipped {
   width: 120px;
 }
 
+#main .status {
+  color: #f5483a;
+}
 #main .signature {
   font-size: 12px;
   line-height: 16px;

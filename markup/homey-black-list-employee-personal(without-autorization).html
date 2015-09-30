@@ -66,9 +66,9 @@
             <nav id="nav">
               <ul>
                 <li><a href="#">Персонал</a></li>
-                <li class="active"><a href="#">Вакансии</a></li>
+                <li><a href="#">Вакансии</a></li>
                 <li><a href="#">Агентства</a></li>
-                <li><a href="#">Черный список</a></li>
+                <li class="active"><a href="#">Черный список</a></li>
                 <li><a href="#">Советы</a></li>
               </ul>
             </nav>
@@ -149,7 +149,9 @@
               <div class="agent-block">
                 <div class="img-block">
                   <img src="images/avatar.png" alt="image description">
-                  <p>Добавлен в список <time datetime="2015-08-23">23 августа 2015</time></p>
+                  <div class="size-box">
+                    <p>Добавлен в список <time datetime="2015-08-23">23 августа 2015</time></p>
+                  </div>
                 </div>
                 <div class="text">
                   <h2 class="h2">Вениамин Вениаминович</h2>
@@ -157,7 +159,7 @@
                     <div><i class="icon-briefcase"></i><strong>Садовник/ Хозяйственник</strong></div>
                     <div><i class="icon-location ye-icon"></i><strong>Город проживания: </strong>Киев (Киевская область, Печерский)</div>
                     <div><i class="icon-location green"></i><strong>Город поиска работы: </strong>Киев</div>
-                    <div class="text-red"><i class="icon-frown"></i><strong>Причина занесения: </strong>непрофессионализм</div>
+                    <div class="status"><i class="icon-frown"></i><strong>Причина занесения: </strong>непрофессионализм</div>
                   </div>
                 </div>
                 <div class="pull-left">
@@ -169,54 +171,60 @@
                 <div class="text-frame">
                   <a href="#" class="btn blue">Назад</a>
                 </div>
-                <div class="text-frame">
-                  <h4>2 комментария - <span>оставить комментарий</span></h4>
-                 </div> 
-                <div class="block">
-                  <strong class="name">Анна Терехова</strong>
-                  <a href="#"><time datetime="2015-05-17T17:00">17 мая 2015, 17:00</time></a>
-                  <p>Конечно няня должна знать современные методики и составить программу по развитию, утвердить с мамой эту программу и заниматься. А зачем еще нужна няня?</p>
-                </div>
-                <div class="block">
-                  <strong class="name">Инна Изварина</strong>
-                  <a href="#"><time datetime="2015-05-17T17:00">17 мая 2015, 17:00</time></a>
-                  <p>на самом деле очень полезно знать, что мамы требуют о няни. Идешь устраиваться и не понимаешь, что мама на самом деле может попросить тебя и спеть и стих рассказать, как то об этом и не думаешь)</p>
-                </div>
-              </div>
-              <h4><span>Добавить комментарий</span></h4>
-              <div class="send-form-box alt">
-                <form class="send-form">
-                  <fieldset>
-                    <div class="form-group">
-                      <input type="text" placeholder="Иванов Иван Иванович">
+                <section class="comment-area">
+                  <strong class="title2">2 комментария - <a href="#">оставить комментарий</a></strong>
+                  <div class="comment-holder">
+                    <div class="comment-box">
+                      <strong class="name">Анна Терехова</strong>
+                      <time datetime="2015-05-17"> 17 мая 2015, 17:00</time>
+                      <p>Конечно няня должна знать современные методики и составить программу по развитию, утвердить с мамой эту программу и заниматься. А зачем еще нужна няня?</p>
                     </div>
-                    <div class="form-group">
-                      <input type="email" placeholder="Ваш e-mail">
-                      <span class="signature">*На сайте не публикуется</span>
+                    <div class="comment-box">
+                      <strong class="name">Инна Изварина</strong>
+                      <time datetime="2015-05-17"> 17 мая 2015, 17:00</time>
+                      <p>на самом деле очень полезно знать, что мамы требуют о няни. Идешь устраиваться и не понимаешь, что мама на самом деле может попросить тебя и спеть и стих рассказать, как то об этом и не думаешь)</p>
                     </div>
-                    <div class="form-group">
-                      <input type="text" placeholder="Пароль*">
-                      <span class="signature">*(Вы сможете пользоваться сайтом, используя указанный e-mail и пароль)</span>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-9">
+                      <h4><span>Добавить комментарий</span></h4>
+                      <form action="#" class="comment-form">
+                        <fieldset>
+                          <div class="form-group">
+                            <input type="text" placeholder="Ваше имя">
+                          </div>
+                          <div class="form-group">
+                            <input type="email" placeholder="Ваш e-mail">
+                            <span class="signature">*На сайте не публикуется</span>
+                          </div>
+                          <div class="form-group">
+                            <input type="text" placeholder="Пароль*">
+                            <span class="signature">*(Вы сможете пользоваться сайтом, используя указанный e-mail и пароль)</span>
+                          </div>
+                          <div class="form-group">
+                            <textarea cols="5" rows="2" placeholder="Текст сообщения"></textarea>
+                          </div>
+                          <div class="form-group">
+                            <h4>Ваш статус:</h4>
+                            <ul class="form-row">
+                              <li>
+                                <input type="radio" id="radio" name="group" checked="">
+                                <label for="radio">Соискатель</label>
+                              </li>
+                              <li>
+                                <input type="radio" id="radio2" name="group">
+                                <label for="radio2">Работодатели</label>
+                              </li>
+                            </ul>
+                            <button class="btn large ye-btn" type="submit">Отправить</button>
+                          </div>
+                        </fieldset>
+                      </form>
                     </div>
-                    <div class="form-group">
-                      <textarea placeholder="Текст сообщения"></textarea>
-                    </div>
-                    <h4>Ваш статус:</h4>
-                    <ul class="form-row">
-                      <li>
-                        <input name="group" checked type="radio" id="radio">
-                        <label for="radio">Соискатель</label>
-                      </li>
-                      <li>
-                        <input name="group" type="radio" id="radio2">
-                        <label for="radio2">Работодатель</label>
-                      </li>
-                    </ul>  
-                    <button type="submit" class="ye-btn btn">Отправить</button>
-                  </fieldset>
-                </form>
-              </div>
-            </div>
+                  </div>
+                </section>
+              </div>  
+            </div>    
           </div>
         </main>
       </div>
