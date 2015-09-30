@@ -66,14 +66,14 @@
             <nav id="nav">
               <ul>
                 <li><a href="#">Персонал</a></li>
-                <li class="active"><a href="#">Вакансии</a></li>
+                <li><a href="#">Вакансии</a></li>
                 <li><a href="#">Агентства</a></li>
-                <li><a href="#">Черный список</a></li>
+                <li class="active"><a href="#">Черный список</a></li>
                 <li><a href="#">Советы</a></li>
               </ul>
             </nav>
           </div>
-          <button type="button" class="btn pull-right" data-toggle="modal" data-target="#myModal">Войти</button>
+          <button type="button" class="btn pull-right" data-toggle="modal" data-target="#myModal">Личный кабинет</button>
           <div class="modal fade modal-size2" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -115,47 +115,83 @@
         <main role="main" id="main">
           <aside id="sidebar">
             <div class="side-box">
-              <div class="box">
+              <div class="icon-holder">
                 <div class="img-box">
                   <div class="ico-box">
-                    <i class="home">
-                      <img src="images/img-home.png" alt="image description" width="46" height="42">
-                    </i>
+                    <i class="dislike"><img src="images/dislike.png" alt="image description"></i>
                   </div>
                 </div>
-                <h3 class="text-center">Пользователю о Homey</h3>
-                <nav>
-                  <ul>
-                    <li><a href="#">Курсы домашнего персонала</a></li>
-                    <li><a href="#">О портале</a></li>
-                    <li class="active"><a href="#">Работодателю</a></li>
-                    <li><a href="#">Соискателю</a></li>
-                    <li><a href="#">Агентствам</a></li>
-                    <li><a href="#">Помощь</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="#">Реклама на сайте</a></li>
-                    <li><a href="#">Условия использования</a></li>
-                  </ul>
-                </nav>
               </div>
-            </div> 
+              <h3>Был негативный опыт с работодателем?</h3>
+              <p>Добавьте его данные в черный список.</p>
+              <a href="#" class="btn red">Добавить работодателя</a>
+            </div>
+            <div class="side-box">
+              <h3 class="text-center">Последние комментарии</h3>
+              <div class="box">
+                <strong><a href="#">Анна Терехова 17.05.2015, в 20:07:30</a></strong>
+                <p>- Конечно няня должна знать современные методики и составить программу по развитию, утвердить с мамой эту программу и заниматься. А зачем еще нужна няня?</p>
+                <p><a href="#">о Сергее Ивановиче (водитель)</a></p>
+              </div>
+              <div class="box">
+                <strong><a href="#">Инна Изварина 28.04.2015, в 10:54:32</a></strong>
+                <p>- Какие то няни, не совсем с мозгами!!! И их еще берут на работу!</p>
+                <p><a href="#">о Елене Петровне (домработница)</a></p>
+              </div>
+              <div class="box">
+                <strong><a href="#">Инна Изварина 28.04.2015, в 10:54:32</a></strong>
+                <p>- На самом деле очень полезно знать, что мамы требуют о няни. Идешь устраиваться и не понимаешь, что мама на самом деле может попросить тебя и спеть и стих рассказать, как то об этом и не думаешь)</p>
+                <p><a href="#">о Сергее Ивановиче (водитель)</a></p>
+              </div>
+            </div>
           </aside>
           <div id="content">
             <div class="holder">
-              <section class="employer-box">
-                <h1 class="text-center">Работодателю</h1>
-                <p>На портале "Домашний персонал" Вы сможете найти персонал для своего дома как на прямую через резюме соискателей, так и через посредников (агентств домашнего персонала).</p>
-                <p>Для начала необходимо зарегистрироваться на сайте. Вам будут видны контакты соискателей в резюме и Вы сможете с ними связаться по телефону.</p>
-                <p>Далее - создайте свои вакансии, для того чтобы кандидаты могли находить их на сайте и отсылать Вам свое резюме.</p>
-                <h2>Рассказать друзьям</h2>
-                <ul class="socials">
-                  <li class="facebook"><a href="#">10</a></li>
-                  <li class="twitter"><a href="#">120</a></li>
-                  <li class="vk"><a href="#">1120</a></li>
-                  <li class="google"><a href="#">1120</a></li>
-                </ul>
-              </section> 
-            </div> 
+              <h1 class="h1">Работодатель в черном списке</h1>
+              <div class="agent-block">
+                <div class="img-block">
+                  <img src="images/avatar.png" alt="image description">
+                  <div class="size-box">
+                    <p>Добавлен в список <time datetime="2015-08-23">23 августа 2015</time></p>
+                  </div>
+                </div>
+                <div class="text">
+                  <h2 class="h2">Иван Иванович</h2>
+                  <div class="info-list">
+                    <div><i class="icon-briefcase"></i><strong>Искал персонал: </strong>садовник/хозяйственник</div>
+                    <div><i class="icon-location ye-icon"></i><strong>Город: </strong>Киев (Киевская область, Печерский)</div>
+                    <div><i class="icon-location green"></i><strong>Город поиска работы: </strong>Киев</div>
+                    <div class="text-red"><i class="icon-frown"></i><strong>Причина занесения: </strong>непрофессионализм</div>
+                  </div>
+                </div>
+                <div class="pull-left">
+                  <p>Предложили работу домработницы на желаемый график работы и оплату. Хорошая семья и отличный работодатель. Обьект ей показала бывшая домработница , все рассказала Обьект ей показала бывшая. Предложили работу домработницы на желаемый график работы и оплату. Хорошая семья и отличный работодатель.</p>
+                  <h6>Контакты автора отзыва: <span>доступны только администраторам</span></h6>
+                </div>
+              </div>
+              <div class="info-block">
+                <div class="text-frame">
+                  <a href="#" class="btn blue">Назад</a>
+                </div>
+                <div class="text-frame">
+                  <h4>2 комментария - <span>оставить комментарий</span></h4>
+                 </div> 
+                <div class="block">
+                  <strong class="name">Анна Терехова</strong>
+                  <a href="#"><time datetime="2015-05-17T17:00">17 мая 2015, 17:00</time></a>
+                  <p>Конечно няня должна знать современные методики и составить программу по развитию, утвердить с мамой эту программу и заниматься. А зачем еще нужна няня?</p>
+                </div>
+                <div class="block">
+                  <strong class="name">Инна Изварина</strong>
+                  <a href="#"><time datetime="2015-05-17T17:00">17 мая 2015, 17:00</time></a>
+                  <p>на самом деле очень полезно знать, что мамы требуют о няни. Идешь устраиваться и не понимаешь, что мама на самом деле может попросить тебя и спеть и стих рассказать, как то об этом и не думаешь)</p>
+                </div>
+              </div>
+              <h4><span>Добавить комментарий</span></h4>
+
+
+
+            </div>
           </div>
         </main>
       </div>
