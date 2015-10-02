@@ -653,7 +653,7 @@
       font-size:12px;
     }
     h2{
-      font-size:17px;
+      font-size:25px;
       margin:0 0 10px;
       line-height:14px;
       color:$blue-color;
@@ -890,6 +890,10 @@
   }
 }
 .agent-block{
+  &.block2{
+    &:before{display:none;}
+    padding-top:0;
+  }
   h3{
     font-size: 18px;
     line-height: 22px;
@@ -991,7 +995,7 @@
       content: "";
       top: -29px;
       left: 0;
-      bottom: -31px;
+      bottom: -22px;
       width: 2px;
       background: #f5f3ed;
     }
