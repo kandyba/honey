@@ -73,7 +73,7 @@
               </ul>
             </nav>
           </div>
-          <button type="button" class="btn pull-right" data-toggle="modal" data-target="#myModal">Войти</button>
+          <button type="button" class="btn pull-right" data-toggle="modal" data-target="#myModal">Личный кабинет</button>
           <div class="modal fade modal-size2" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -83,27 +83,31 @@
                 <div class="modal-body">
                   <h4 class="text-center">Вход на сайт</h4>
                   <div class="modal-form">
-                    <div class="form-group">
-                      <input type="email" placeholder="E-mail">
-                    </div>
-                    <div class="form-group">
-                      <input type="password" placeholder="Пароль">
-                    </div>
-                    <div class="form-group checkbox">
-                      <input id="remember" type="checkbox" checked>
-                      <label for="remember">Запомнить меня</label>
-                    </div>
-                    <div class="form-group">
-                      <button class="btn large" type="submit">Войти</button>
-                    </div>
-                    <div class="form-group">
-                      <div class="pull-left">
-                        <a href="#">Забыли пароль?</a>
-                      </div>
-                      <div class="pull-right">
-                        <a href="#">Еще не зарегистрированы?</a>
-                      </div>
-                    </div>
+                     <form action="#">
+                      <fieldset>
+                        <div class="form-group">
+                          <input type="email" placeholder="E-mail">
+                        </div>
+                        <div class="form-group">
+                          <input type="password" placeholder="Пароль">
+                        </div>
+                        <div class="form-group checkbox">
+                          <input id="remember" type="checkbox" checked>
+                          <label for="remember">Запомнить меня</label>
+                        </div>
+                        <div class="form-group">
+                          <button class="btn large" type="submit">Войти</button>
+                        </div>
+                        <div class="form-group">
+                          <div class="pull-left">
+                            <a href="#">Забыли пароль?</a>
+                          </div>
+                          <div class="pull-right">
+                            <a href="#">Еще не зарегистрированы?</a>
+                          </div>
+                        </div>
+                      </fieldset>
+                     </form>
                   </div>
                 </div>
               </div>
@@ -114,11 +118,6 @@
       <div class="container container-area">
         <main role="main" id="main">
           <aside id="sidebar">
-            <div class="side-box">
-              <h3 class="text-center">Зарегистрируйтесь!</h3>
-              <p>Только зарегистрированные пользователи могут добавлять отзывы об агентствах и ставить рейтинговые оценки</p>
-              <a href="#" class="btn green">Зарегистрироваться</a>
-            </div>
             <div class="side-box text-left">
               <h3>Заявка на поиск персонала в агентство</h3>
               <p>Нет времени искать песронал самому? Подайте заявку в агентство </p>
@@ -130,39 +129,44 @@
                       <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
                     </div>
                     <div class="modal-body modal2">
-                      <h4>Заявка на подбор персонала</h4>
-                      <p>Вам срочно нужен помощник по дому? Заполните онлайн-заявку, чтобы отправить ее всем рекомендованным агентствам сразу. Вы экономите время, так как вам не прийдется звонить во все агентства по отдельности. После ее получения, специалисты агентств свяжутся с вами для обсуждения деталей заказа</p>
+                      <h4>Добавление агентства</h4>
                       <div class="row">
                         <div class="col-md-8">
-                          <label for="label1">Имя и фамилия</label>
+                          <label for="label1">Название агентства</label>
                           <div class="form-group">
-                            <input id="label1" type="text" placeholder="Имя и фамилия">
-                          </div>
-                          <label for="label2">Контактный телефон</label>
-                          <div class="form-group">
-                            <input id="label2" type="tel" placeholder="+38  (___) __-__-___">
-                          </div>
-                          <label for="label3">E-mail</label>
-                          <div class="form-group">
-                            <input id="label3" type="email" placeholder="E-mail">
+                            <input id="label1" type="text" placeholder="Введите название">
                           </div>
                           <div class="form-group">
-                            <label>Какой персонал Вам нужен?</label>
+                            <label>Город</label>
                             <select>
-                              <option>Выберите персонал</option>
-                              <option>Выберите персонал</option>
-                              <option>Выберите персонал</option>
-                              <option>Выберите персонал</option>
+                              <option>Выберите город</option>
+                              <option>Выберите город</option>
+                              <option>Выберите город</option>
+                              <option>Выберите город</option>
+                              <option>Выберите город</option>
                             </select>
+                          </div>
+                          <label for="label2">Сайт</label>
+                          <div class="form-group">
+                            <input id="label2" type="text" placeholder="Укажите сайт">
+                          </div>
+                          <label for="label3">Контактный телефон</label>
+                          <div class="form-group">
+                            <input id="label3" type="tel" placeholder="+38  (___) __-__-___">
                           </div>
                         </div>
                       </div>
-                      <label for="label4">Дополнительное описание</label>
-                      <div class="form-group">
-                        <textarea id="label4" cols="3" rows="2" placeholder="Опишите свои требования, предъявляемые к персоналу"></textarea>
+                      <div class="vacation-block">
+                        <div class="ico-box">
+                          <i class="icon-briefcase case1"></i>
+                        </div>
+                        <div class="text-box text-left">
+                          <h4>Вы представитель агентства?</h4>
+                          <p>Если Вы представитель агентства, зарегистрируйтесь на сайте как агентство, заполните профиль, и данные агентства появятся в каталоге бесплатно.</p>
+                        </div>
                       </div>
                       <div class="modal-footer">
-                        <button class="btn pull-right blue" type="submit">Отправить</button>
+                        <button class="btn pull-right blue" type="submit">Опубликовать</button>
                       </div>
                     </div>
                   </div>
@@ -316,28 +320,9 @@
                             <input type="text" placeholder="Ваше имя">
                           </div>
                           <div class="form-group">
-                            <input type="email" placeholder="Ваш e-mail" requied>
-                            <span class="signature">*На сайте не публикуется</span>
-                          </div>
-                          <div class="form-group">
-                            <input type="text" placeholder="Пароль*" requied>
-                            <span class="signature">*(Вы сможете пользоваться сайтом, используя указанный e-mail и пароль)</span>
-                          </div>
-                          <div class="form-group">
                             <textarea cols="5" rows="2" placeholder="Текст сообщения"></textarea>
                           </div>
                           <div class="form-group">
-                            <h4>Ваш статус:</h4>
-                            <ul class="form-row">
-                              <li>
-                                <input type="radio" id="radio" name="group" checked>
-                                <label for="radio">Соискатель</label>
-                              </li>
-                              <li>
-                                <input type="radio" id="radio2" name="group">
-                                <label for="radio2">Работодатели</label>
-                              </li>
-                            </ul>
                             <h4>Оцените агентство:</h4>
                             <ul class="form-row">
                               <li>

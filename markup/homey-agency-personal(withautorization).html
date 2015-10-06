@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>honey</title>
+    <link href="css/bootstrap.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/main.css" media="all" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,600italic,700,700italic" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <span class="xs-overlay"></span>
+      <header id="header">
+        <div class="container">
+          <div class="logo pull-left">
+            <div class="logo-box">
+              <a href="#"><img alt="honey" src="images/logo.png"></a>
+              <button type="button" class="country" data-toggle="modal" data-target="#myModal3">
+                <div class="img-box">
+                  <img src="images/ukr.png" alt="image description">
+                </div>
+                <span class="name">Украина</span>
+                <i class="icon-down-open"></i>
+              </button>
+              <div class="modal fade modal-size2" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                      <h4 class="text-center">Выберите страну</h4>
+                        <form action="#">
+                          <ul class="country-list">
+                            <li>
+                              <label for="ukraine">
+                                <div class="img-box">
+                                  <img src="images/ukraine.png" alt="ukraine">
+                                </div>
+                                <div>
+                                  <input id="ukraine" type="radio" name="group" checked>
+                                      Украина
+                                </div>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="russian">
+                                <img src="images/russian.png" alt="russian">
+                                <div>
+                                  <input id="russian" type="radio" name="group">
+                                      Россия
+                                </div>
+                              </label>
+                            </li>
+                          </ul>
+                        </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="nav-opener" href="#"><span></span></a>
+          <div class="popup-holder">
+            <nav id="nav">
+              <ul>
+                <li><a href="#">Персонал</a></li>
+                <li class="active"><a href="#">Вакансии</a></li>
+                <li><a href="#">Агентства</a></li>
+                <li><a href="#">Черный список</a></li>
+                <li><a href="#">Советы</a></li>
+              </ul>
+            </nav>
+          </div>
+          <button type="button" class="btn pull-right" data-toggle="modal" data-target="#myModal">Личный кабинет</button>
+          <div class="modal fade modal-size2" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                  <h4 class="text-center">Вход на сайт</h4>
+                  <div class="modal-form">
+                    <div class="form-group">
+                      <input type="email" placeholder="E-mail">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" placeholder="Пароль">
+                    </div>
+                    <div class="form-group checkbox">
+                      <input id="remember" type="checkbox" checked>
+                      <label for="remember">Запомнить меня</label>
+                    </div>
+                    <div class="form-group">
+                      <button class="btn large" type="submit">Войти</button>
+                    </div>
+                    <div class="form-group">
+                      <div class="pull-left">
+                        <a href="#">Забыли пароль?</a>
+                      </div>
+                      <div class="pull-right">
+                        <a href="#">Еще не зарегистрированы?</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container container-area">
+        <main role="main" id="main">
+          <aside id="sidebar">
+            <div class="side-box text-left">
+              <h3>Заявка на поиск персонала в агентство</h3>
+              <p>Нет времени искать песронал самому? Подайте заявку в агентство </p>
+              <a href="#" class="btn blue" data-toggle="modal" data-target="#myModal4">Подать заявку</a>
+              <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body modal2">
+                      <h4>Заявка на подбор персонала</h4>
+                      <p>Вам срочно нужен помощник по дому? Заполните онлайн-заявку, чтобы отправить ее всем рекомендованным агентствам сразу. Вы экономите время, так как вам не прийдется звонить во все агентства по отдельности. После ее получения, специалисты агентств свяжутся с вами для обсуждения деталей заказа</p>
+                       <form action="#">
+                        <fieldset>
+                          <div class="row">
+                            <div class="col-md-8">
+                              <label for="label1">Имя и фамилия</label>
+                              <div class="form-group">
+                                <input id="label1" type="text" placeholder="Имя и фамилия">
+                              </div>
+                              <label for="label2">Контактный телефон</label>
+                              <div class="form-group">
+                                <input id="label2" type="tel" placeholder="+38  (___) __-__-___">
+                              </div>
+                              <label for="label3">E-mail</label>
+                              <div class="form-group">
+                                <input id="label3" type="email" placeholder="E-mail">
+                              </div>
+                              <div class="form-group">
+                                <label>Какой персонал Вам нужен?</label>
+                                <select>
+                                  <option>Выберите персонал</option>
+                                  <option>Выберите персонал</option>
+                                  <option>Выберите персонал</option>
+                                  <option>Выберите персонал</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </fieldset>
+                       </form>
+                      <label for="label4">Дополнительное описание</label>
+                      <div class="form-group">
+                        <textarea id="label4" cols="3" rows="2" placeholder="Опишите свои требования, предъявляемые к персоналу"></textarea>
+                      </div>
+                      <div class="modal-footer">
+                        <button class="btn pull-right blue" type="submit">Отправить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="side-box">
+              <h3 class="text-center">Топ-агентств</h3>
+              <ul class="partner-list">
+                <li>
+                  <div class="img-box">
+                    <img src="images/partner-4.png" alt="image description">
+                  </div>
+                  <ul class="star-rating">
+                    <li><a href="#" title="Rate this 1 star out of 5" class="one-star">1</a></li>
+                    <li><a href="#" title="Rate this 2 stars out of 5" class="two-stars">2</a></li>
+                    <li class="active"><a href="#" title="Rate this 3 stars out of 5" class="three-stars">3</a></li>
+                    <li><a href="#" title="Rate this 4 stars out of 5" class="four-stars">4</a></li>
+                    <li><a href="#" title="Rate this 5 stars out of 5" class="five-stars">5</a></li>
+                  </ul>
+                  <strong class="count2">(19 голосов)</strong>
+                </li>
+                <li>
+                  <div class="img-box">
+                    <img src="images/partner-4.png" alt="image description">
+                  </div>
+                  <ul class="star-rating">
+                    <li><a href="#" title="Rate this 1 star out of 5" class="one-star">1</a></li>
+                    <li><a href="#" title="Rate this 2 stars out of 5" class="two-stars">2</a></li>
+                    <li class="active"><a href="#" title="Rate this 3 stars out of 5" class="three-stars">3</a></li>
+                    <li><a href="#" title="Rate this 4 stars out of 5" class="four-stars">4</a></li>
+                    <li><a href="#" title="Rate this 5 stars out of 5" class="five-stars">5</a></li>
+                  </ul>
+                  <strong class="count2">(19 голосов)</strong>
+                </li>
+                <li>
+                  <div class="img-box">
+                    <img src="images/partner-4.png" alt="image description">
+                  </div>
+                  <ul class="star-rating">
+                    <li><a href="#" title="Rate this 1 star out of 5" class="one-star">1</a></li>
+                    <li><a href="#" title="Rate this 2 stars out of 5" class="two-stars">2</a></li>
+                    <li class="active"><a href="#" title="Rate this 3 stars out of 5" class="three-stars">3</a></li>
+                    <li><a href="#" title="Rate this 4 stars out of 5" class="four-stars">4</a></li>
+                    <li><a href="#" title="Rate this 5 stars out of 5" class="five-stars">5</a></li>
+                  </ul>
+                  <strong class="count2">(19 голосов)</strong>
+                </li>
+                <li>
+                  <div class="img-box">
+                    <img src="images/partner-4.png" alt="image description">
+                  </div>
+                  <ul class="star-rating">
+                    <li><a href="#" title="Rate this 1 star out of 5" class="one-star">1</a></li>
+                    <li><a href="#" title="Rate this 2 stars out of 5" class="two-stars">2</a></li>
+                    <li class="active"><a href="#" title="Rate this 3 stars out of 5" class="three-stars">3</a></li>
+                    <li><a href="#" title="Rate this 4 stars out of 5" class="four-stars">4</a></li>
+                    <li><a href="#" title="Rate this 5 stars out of 5" class="five-stars">5</a></li>
+                  </ul>
+                  <strong class="count2">(19 голосов)</strong>
+                </li>
+              </ul>
+            </div>
+          </aside>
+          <div id="content">
+            <div class="holder">
+              <div class="agent-block block2">
+                <div class="img-block">
+                  <a href="#"><img src="images/partner-6.png" alt="image description"></a>
+                  <p class="text-center"><strong><a href="#">abc-f.com.ua</a></strong></p>
+                  <span class="check">Проверенное агентство</span>
+                </div>
+                <div class="text">
+                  <div class="title-box">
+                    <h2 class="pull-left">Азбука семьи</h2>
+                    <a href="#" class="btn pull-right ye-btn">Рекомендуем</a>
+                  </div>
+                  <div class="title-block">
+                    <ul class="star-rating">
+                      <li><a href="#" title="Rate this 1 star out of 5" class="one-star">1</a></li>
+                      <li><a href="#" title="Rate this 2 stars out of 5" class="two-stars">2</a></li>
+                      <li class="active"><a href="#" title="Rate this 3 stars out of 5" class="three-stars">3</a></li>
+                      <li><a href="#" title="Rate this 4 stars out of 5" class="four-stars">4</a></li>
+                      <li><a href="#" title="Rate this 5 stars out of 5" class="five-stars">5</a></li>
+                    </ul>
+                    <strong class="count2">(19 голосов)</strong>
+                  </div>
+                  <dl>
+                    <dt>Год начала работы: </dt>
+                    <dd>с 2007</dd>
+                    <dt>Сайт:</dt>
+                    <dd><a href="#">abc-f.com.ua</a></dd>
+                  </dl>
+                  <p><strong>Описание:</strong> Качественный подбор домашнего персонала. Работаем с 2007 года. Работаем по всей Украине и за границу. Качественный подбор домашнего персонала. Работаем с 2007 года. Работаем по всей Украине и за границу. Качественный подбор домашнего персонала. </p>
+                </div>
+              </div>
+              <div class="agent-block">
+                <div class="map-holder row">
+                  <div class="col-md-6">
+                    <h3>Контактные данные</h3>
+                    <address>
+                      <div class="city"><strong>Город: </strong> Киев (Киевская область, Печерский)</div>
+                      <div class="rigion"><strong>Метро: </strong> Театральная</div>
+                      <div class="street"><strong>Адрес офиса: </strong> ул. Богдана Хмельницкого 16-22, оф.210</div>
+                      <div class="tel-row">
+                        <div>
+                          <strong>Телефон для нанимателей:</strong><br>
+                          <a href="tel:0443625075">(044) 362-50-75</a>
+                          <a href="tel:0955859444">(095) 58-59-444</a>
+                        </div>
+                        <div>
+                          <strong>Телефон для работников:</strong> <br>
+                          <a href="tel:0443625075">(044) 362-50-75</a>
+                          <a href="tel:0955859444">(095) 58-59-444</a>
+                        </div>
+                      </div>
+                      <div class="hour-work">График работы: <br>
+                        (с понелельника по пятницу с 9:00 до 18:00
+                      </div>
+                    </address>
+                  </div>
+                  <div class="col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1763.8489543400485!2d39.553367706286714!3d52.597696041474286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413a14b16a3fb8db%3A0x44368f4a8af4efc2!2sul.+Bogdana+Khmelnitskogo%2C+16%2C+210%2C+Lipeck%2C+Lipetskaya+oblast&#39;%2C+Russia%2C+398024!5e0!3m2!1sen!2s!4v1443633032315" width="300" height="374" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+              <section class="comment-area decor-line">
+                  <strong class="title2">2 отзыва об агентстве - <a href="#">оставить отзыв </a></strong>
+                  <div class="comment-holder">
+                    <div class="comment-box">
+                      <div class="box">
+                        <strong class="name"><i class="icon-smile"></i> Анна Терехова</strong>
+                        <time datetime="2015-05-17"> 17 мая 2015, 17:00</time>
+                      </div>
+                      <p>Конечно няня должна знать современные методики и составить программу по развитию, утвердить с мамой эту программу и заниматься. А зачем еще нужна няня?</p>
+                    </div>
+                    <div class="comment-box">
+                      <div class="box">
+                        <strong class="name"><i class="icon-frown"></i> Анна Терехова</strong>
+                        <time datetime="2015-05-17"> 17 мая 2015, 17:00</time>
+                      </div>
+                      <p>Конечно няня должна знать современные методики и составить программу по развитию, утвердить с мамой эту программу и заниматься. А зачем еще нужна няня?</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-9">
+                      <form action="#" class="comment-form">
+                        <h3>Добавить отзыв</h3>
+                        <fieldset>
+                          <div class="form-group">
+                            <input type="text" placeholder="Ваше имя">
+                          </div>
+                          <div class="form-group">
+                            <textarea cols="5" rows="2" placeholder="Текст сообщения"></textarea>
+                          </div>
+                          <div class="form-group">
+                            <h4>Оцените агентство:</h4>
+                            <ul class="form-row">
+                              <li>
+                                <input type="radio" id="radio4" name="group2" checked>
+                                <label for="radio4">Понравилось</label>
+                              </li>
+                              <li>
+                                <input type="radio" id="radio3" name="group2">
+                                <label for="radio3">Не понравилось</label>
+                              </li>
+                            </ul>
+                            <button class="btn large ye-btn" type="submit">Отправить</button>
+                          </div>
+                        </fieldset>
+                      </form>
+                    </div>
+                  </div>
+                </section>
+            </div>
+          </div>
+        </main>
+      </div>
+      <footer id="footer">
+        <div class="container">
+          <div class="footer-cont">
+            <ul class="footer-block">
+              <li class="col">
+                <ul>
+                  <li><a href="#">Нанимателю</a></li>
+                  <li><a href="#">Соискателю</a></li>
+                  <li><a href="#">Агенствам</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">О сервисе</a></li>
+                  <li><a href="#">Реклама на сайте</a></li>
+                  <li><a href="#">Контакты</a></li>
+                  <li><a href="#">Условия использования</a></li>
+                </ul>
+              </li>
+              <li class="col">
+                <ul>
+                  <li><a href="#">Работа няней</a></li>
+                  <li><a href="#">Работа домработницей</a></li>
+                  <li><a href="#">Работа сиделкой</a></li>
+                  <li><a href="#">Работа водителем</a></li>
+                  <li><a href="#">Работа садовником</a></li>
+                  <li><a href="#">Работа репетитором</a></li>
+                  <li><a href="#">Работа поваром</a></li>
+                  <li><a href="#">Работа охранником</a></li>
+                  <li><a href="#">Работа управляющим дома</a></li>
+                </ul>
+              </li>
+              <li class="col">
+                <ul>
+                  <li><a href="#">Няня без посредников</a></li>
+                  <li><a href="#">Домработница без посредников</a></li>
+                  <li><a href="#">Сиделка без посредников</a></li>
+                  <li><a href="#">Домашний повар в семью</a></li>
+                  <li><a href="#">Садовник, хозяйственник</a></li>
+                  <li><a href="#">Управляющий домом</a></li>
+                  <li><a href="#">Услуги репетитора</a></li>
+                  <li><a href="#">Охранники</a></li>
+                  <li><a href="#">Личный, семейный водитель</a></li>
+                </ul>
+              </li>
+              <li class="col-text">
+                <p> <a href="#">Homey.com.ua</a> - надёжный сервис для поиска домашнего персонала в Украине без посредников. Здесь вы можете подобрать помошника самостоятельно - няню для ребёнка, домработницу, семейного водителя, сиделку, садовника, охранника и управляющего домом. Публикуйте свои вакансии и связывайтесь с прямым работодателем бесплатно.</p>
+                <p> <a href="#">Homey.com.ua.</a> - это бесплатный сервис для поиска работы в качестве няни, домработницы, сиделки, водителя, садовника В Киеве, Одессе, Харькове, Днепропетровске, Запорожье и других городах Украины. Публикуйте своё резюме и связывайтесь с прямым работодателем бесплатно.</p>
+              </li>
+            </ul>
+            <button type="button" class="btn empty" data-toggle="modal" data-target="#myModal2">Помощь</button>
+            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                  </div>
+                  <div class="modal-body">
+                    <h4 class="text-center">Обратная связь</h4>
+                    <div class="modal-form">
+                    <p class="text-center">Задайте интересующий вас вопрос, и  мы вышлем письмо с ответом на ваш e-mail  в течение ? часов</p>
+                      <div class="form-group">
+                        <input type="email" placeholder="E-mail">
+                        <div class="invalid-massege">Невалидный имейл</div>
+                      </div>
+                      <div class="form-group">
+                        <textarea cols="3" rows="2" placeholder="Текст сообщения"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <a href="#" class="btn large">Отправить</a>
+                      </div>
+                      <div class="text-center"><a href="#">Уже зарегестрированы?</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="footer-box">
+            <ul class="social-list">
+              <li><a href="#"><img src="images/facebook.png" alt="vk"></a></li>
+              <li><a href="#"><img src="images/twitter.png" alt="vk"></a></li>
+              <li><a href="#"><img src="images/google.png" alt="vk"></a></li>
+              <li><a href="#"><img src="images/vk.png" alt="vk"></a></li>
+            </ul>
+            <p class="text-center">© 2009-2015 <a href="#">Homey.com.ua</a></p>
+          </div>
+        </div>
+        <a href="#" id="scroller"><i class="icon-up-small"></i></a>
+      </footer>
+    </div>
+    <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="js/jquery.main.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      if (navigator.userAgent.match(/IEMobile/10.0/)  navigator.userAgent.match(/MSIE 10.*Touch/)) {
+      var msViewportStyle = document.createElement('style')
+      msViewportStyle.appendChild(
+      document.createTextNode(
+      '@-ms-viewport{width:auto !important}'))
+      document.querySelector('head').appendChild(msViewportStyle)}
+    </script>
+  </body>
+</html>

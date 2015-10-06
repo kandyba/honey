@@ -163,6 +163,7 @@ input[type="tel"]{
   background:$base-white-color;
   margin:0;
   width:100%;
+  box-shadow: none;
   &:focus{
     background:#f8f8f8;
     border-color:$yellow;

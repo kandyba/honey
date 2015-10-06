@@ -245,9 +245,84 @@
                     </div>
                     <button type="submit" class="btn red">Найти</button>
                   </fieldset>
+                  <div class="collapse" id="collapseExample">
+                    <div class="well">
+                      <strong class="title">Дополнительные параметры</strong>
+                      <div class="row">
+                        <div class="col-md1">
+                          <select>
+                            <option>Любой район</option>
+                            <option>Название</option>
+                            <option>Название</option>
+                            <option>Название</option>
+                            <option>Название</option>
+                            <option>Название</option>
+                            <option>Название</option>
+                            <option>Название</option>
+                            <option>Название</option>
+                            <option>Название</option>
+                            <option>Название</option>
+                            <option>Название</option>
+                            <option>Название</option>
+                            <option>Название</option>
+                            <option>Название</option>
+                            <option>Название</option>
+                          </select>
+                        </div>
+                        <div class="col-md2">
+                          <div class="checkbox">
+                            <input id="vacanc" type="checkbox" checked>
+                            <label for="vacanc">Только вакансии от частных лиц</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="checkbox-area">
+                        <strong class="title"><span>График работы</span></strong>
+                        <div class="row">
+                          <div class="col-md1">
+                            <div class="checkbox">
+                              <input id="vacanc" type="checkbox" checked>
+                              <label for="vacanc">Полная занятость без проживания</label>
+                            </div>
+                            <div class="checkbox">
+                              <input id="vacanc" type="checkbox" checked>
+                              <label for="vacanc">Полная занятость с проживанием</label>
+                            </div>
+                            <div class="checkbox">
+                              <input id="vacanc" type="checkbox">
+                              <label for="vacanc">Частичная занятость</label>
+                            </div>
+                          </div>
+                          <div class="col-md2">
+                            <div class="checkbox">
+                              <input id="vacanc" type="checkbox" checked>
+                              <label for="vacanc">Вахта без проживания</label>
+                            </div>
+                            <div class="checkbox">
+                              <input id="vacanc" type="checkbox" checked>
+                              <label for="vacanc">Вахта с проживанием</label>
+                            </div>
+                            <div class="checkbox">
+                              <input id="vacanc" type="checkbox">
+                              <label for="vacanc">Посуточно</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="opener-box">
+                          <a role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Свернуть расширенный поиск
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </form>
+                <p class="text-right opener-link">
+                    <a role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      Расширенный поиск
+                    </a>
+                  </p>
               </div>
-              <p class="text-right"><a href="#">Расширенный поиск</a></p>
               <div class="vacation-block">
                 <div class="ico-box">
                   <i class="icon-briefcase case1"></i>
@@ -265,27 +340,29 @@
                   <p>Вакансия размещена <time datetime="2015-08-23">23 августа 2015</time></p>
                 </div>
                 <div class="text">
-                  <div class="text-info">
-                    <h4>Требуется садовник по уходу за участком 30 соток</h4>
-                    <address>
-                      <strong class="city">Киев (Киевская область, Печерский)</strong>  
-                    </address>
-                    <span class="icon"><i class="icon-cog"></i>> 5 лет опыта</span>
+                  <div class="wrap-box">
+                    <div class="text-info">
+                      <h4>Требуется садовник по уходу за участком 30 соток</h4>
+                      <address>
+                        <strong class="city">Киев (Киевская область, Печерский)</strong>  
+                      </address>
+                      <span class="icon"><i class="icon-cog"></i>> 5 лет опыта</span>
+                    </div>
+                    <div class="info-box text-right">
+                      <h3>15000 грн/мес.</h3>
+                      <ul class="btn-list">
+                        <li><a href="#" class="btn ye-btn">Горячее</a></li>
+                        <li><a href="#" class="btn green">Новое</a></li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="info-box text-right">
-                    <h3>15000 грн/мес.</h3>
-                    <ul class="btn-list">
-                      <li><a href="#" class="btn ye-btn">Горячее</a></li>
-                      <li><a href="#" class="btn green">Новое</a></li>
-                    </ul>
-                  </div>
-                  <div class="wrap-box pull-left">
-                    <p><strong>Описание вакансии:</strong> “Водительское удостоверение категории "В.Стаж вождения 16 лет. Личным-семейным водителем 15 лет. Работал на автомобилях...” <a href="#">Подробнее</a></p>
-                    <ul class="btn-list">
-                      <li><a href="#" class="btn">Частный дом</a></li>
-                      <li><a href="#" class="btn">Квартира</a></li>
-                      <li><a href="#" class="btn">Посуточно</a></li>
-                    </ul>
+                  <p><strong>Описание вакансии:</strong> “Водительское удостоверение категории "В.Стаж вождения 16 лет. Личным-семейным водителем 15 лет. Работал на автомобилях...” <a href="#">Подробнее</a></p>
+                  <ul class="btn-list">
+                    <li><a href="#" class="btn">Частный дом</a></li>
+                    <li><a href="#" class="btn">Квартира</a></li>
+                    <li><a href="#" class="btn">Посуточно</a></li>
+                  </ul>
+                  <div class="wrap-box">
                     <a href="#" class="btn blue pull-right"><span>+</span>В избранное</a>
                   </div>
                 </div>
@@ -297,26 +374,28 @@
                   <p>Вакансия размещена <time datetime="2015-08-23">23 августа 2015</time></p>
                 </div>
                 <div class="text">
-                  <div class="text-info">
-                    <h4>Нужна няня для девочки 4 лет, стоянка</h4>
-                    <address>
-                      <strong class="city">Киев (Киевская область, Печерский)</strong>  
-                    </address>
-                    <span class="icon"><i class="icon-cog"></i>> 5 лет опыта</span>
+                  <div class="wrap-box">
+                    <div class="text-info">
+                      <h4>Нужна няня для девочки 4 лет, стоянка</h4>
+                      <address>
+                        <strong class="city">Киев (Киевская область, Печерский)</strong>  
+                      </address>
+                      <span class="icon"><i class="icon-cog"></i>> 5 лет опыта</span>
+                    </div>
+                    <div class="info-box text-right">
+                      <h3>13000 грн/мес.</h3>
+                      <ul class="btn-list">
+                        <li><a href="#" class="btn green">Новое</a></li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="info-box text-right">
-                    <h3>13000 грн/мес.</h3>
-                    <ul class="btn-list">
-                      <li><a href="#" class="btn green">Новое</a></li>
-                    </ul>
-                  </div>
-                  <div class="wrap-box pull-left">
-                    <p><strong>Описание вакансии:</strong> “Нужна няня для девочки 4 лет, Работа в Киеве, с.Стоянка. График 5/2 без проживания Оплата: 13000 грн за месяц. Знаниеанглийского и французского языка. Обязанности...”  <a href="#">Подробнее</a></p>
-                    <ul class="btn-list">
-                      <li><a href="#" class="btn">Частный дом</a></li>
-                      <li><a href="#" class="btn">Квартира</a></li>
-                      <li><a href="#" class="btn">Посуточно</a></li>
-                    </ul>
+                  <p><strong>Описание вакансии:</strong> “Нужна няня для девочки 4 лет, Работа в Киеве, с.Стоянка. График 5/2 без проживания Оплата: 13000 грн за месяц. Знаниеанглийского и французского языка. Обязанности...”  <a href="#">Подробнее</a></p>
+                  <ul class="btn-list">
+                    <li><a href="#" class="btn">Частный дом</a></li>
+                    <li><a href="#" class="btn">Квартира</a></li>
+                    <li><a href="#" class="btn">Посуточно</a></li>
+                  </ul>
+                  <div class="wrap-box">
                     <a href="#" class="btn blue pull-right"><span>+</span>В избранное</a>
                   </div>
                 </div>
@@ -329,27 +408,29 @@
                   <span class="check">Проверенное агентство</span>
                 </div>
                 <div class="text">
-                  <div class="text-info">
-                    <h4>Домработница 2 дня в неделю</h4>
-                    <address>
-                      <strong class="city">Киев (Киевская область, Печерский)</strong>  
-                    </address>
-                    <span class="icon"><i class="icon-cog"></i>> 5 лет опыта</span>
+                  <div class="wrap-box">
+                    <div class="text-info">
+                      <h4>Домработница 2 дня в неделю</h4>
+                      <address>
+                        <strong class="city">Киев (Киевская область, Печерский)</strong>  
+                      </address>
+                      <span class="icon"><i class="icon-cog"></i>> 5 лет опыта</span>
+                    </div>
+                    <div class="info-box text-right">
+                      <h3>500 грн/мес.</h3>
+                      <ul class="btn-list">
+                        <li><a href="#" class="btn ye-btn">Горячее</a></li>
+                        <li><a href="#" class="btn green">Новое</a></li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="info-box text-right">
-                    <h3>500 грн/мес.</h3>
-                    <ul class="btn-list">
-                      <li><a href="#" class="btn ye-btn">Горячее</a></li>
-                      <li><a href="#" class="btn green">Новое</a></li>
-                    </ul>
-                  </div>
-                  <div class="wrap-box pull-left">
-                    <p><strong>Описание вакансии:</strong> “Требуется домработница для уборки квартиры 120 кв.м. Место работы: г. Киев, Нивки, Работа 2 дня в неделю, нужно убрать, загрузить вещи в стиральную машину, погладить вещи. 500 грн/день...”  <a href="#">Подробнее</a></p>
-                    <ul class="btn-list">
-                      <li><a href="#" class="btn">Частный дом</a></li>
-                      <li><a href="#" class="btn">Квартира</a></li>
-                      <li><a href="#" class="btn">Посуточно</a></li>
-                    </ul>
+                  <p><strong>Описание вакансии:</strong> “Требуется домработница для уборки квартиры 120 кв.м. Место работы: г. Киев, Нивки, Работа 2 дня в неделю, нужно убрать, загрузить вещи в стиральную машину, погладить вещи. 500 грн/день...”  <a href="#">Подробнее</a></p>
+                  <ul class="btn-list">
+                    <li><a href="#" class="btn">Частный дом</a></li>
+                    <li><a href="#" class="btn">Квартира</a></li>
+                    <li><a href="#" class="btn">Посуточно</a></li>
+                  </ul>
+                  <div class="wrap-box">
                     <a href="#" class="btn blue pull-right"><span>+</span>В избранное</a>
                   </div>
                 </div>
@@ -361,24 +442,26 @@
                   <p>Вакансия размещена <time datetime="2015-08-23">23 августа 2015</time></p>
                 </div>
                 <div class="text">
-                  <div class="text-info">
-                    <h4>Домработница 2 дня в неделю</h4>
-                    <address>
-                      <strong class="city">Киев (Киевская область, Печерский)</strong>  
-                    </address>
-                    <span class="icon"><i class="icon-cog"></i>> 5 лет опыта</span>
+                  <div class="wrap-box">
+                    <div class="text-info">
+                      <h4>Домработница 2 дня в неделю</h4>
+                      <address>
+                        <strong class="city">Киев (Киевская область, Печерский)</strong>  
+                      </address>
+                      <span class="icon"><i class="icon-cog"></i>> 5 лет опыта</span>
+                    </div>
+                    <div class="info-box text-right">
+                      <h3>15000 грн/мес.</h3>
+                      <ul class="btn-list">
+                        <li><a href="#" class="btn green">Новое</a></li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="info-box text-right">
-                    <h3>15000 грн/мес.</h3>
-                    <ul class="btn-list">
-                      <li><a href="#" class="btn green">Новое</a></li>
-                    </ul>
-                  </div>
-                  <div class="wrap-box pull-left">
-                    <p><strong>Описание вакансии:</strong> “Ищем репетиторов английского языка для работы в семьях, с детьми разного возраста Заработная плата от 80 до 200 грн/час Работа по всем районам Киева и Киевской области Рассматриваются кандидаты с опытом и без опыта работы! ...” <a href="#">Подробнее</a></p>
-                    <ul class="btn-list">
-                      <li><a href="#" class="btn">Частный дом</a></li>
-                    </ul>
+                  <p><strong>Описание вакансии:</strong> “Ищем репетиторов английского языка для работы в семьях, с детьми разного возраста Заработная плата от 80 до 200 грн/час Работа по всем районам Киева и Киевской области Рассматриваются кандидаты с опытом и без опыта работы! ...” <a href="#">Подробнее</a></p>
+                  <ul class="btn-list">
+                    <li><a href="#" class="btn">Частный дом</a></li>
+                  </ul>
+                  <div class="wrap-box">
                     <a href="#" class="btn blue pull-right"><span>+</span>В избранное</a>
                   </div>
                 </div>
@@ -390,30 +473,32 @@
                   <p>Вакансия размещена <time datetime="2015-08-23">23 августа 2015</time></p>
                 </div>
                 <div class="text">
-                  <div class="text-info">
-                    <h4>Водитель на своем автомобиле представительского класса</h4>
-                    <address>
-                      <strong class="city">Киев (Киевская область, Печерский)</strong>  
-                    </address>
-                    <span class="icon"><i class="icon-cog"></i>> 5 лет опыта</span>
-                  </div>
-                  <div class="info-box text-right">
-                    <h3>20000 грн/мес.</h3>
-                    <ul class="btn-list">
-                      <li><a href="#" class="btn green">Новое</a></li>
-                    </ul>
-                  </div>
-                  <div class="wrap-box pull-left">
-                    <p><strong>Описание вакансии:</strong> “Водительское удостоверение категории "В.Стаж вождения 16 лет...” <a href="#">Подробнее</a></p>
-                    <ul class="btn-list">
-                      <li><a href="#" class="btn">Частный дом</a></li>
-                      <li><a href="#" class="btn">Квартира</a></li>
-                      <li><a href="#" class="btn">Посуточно</a></li>
-                      <li><a href="#" class="btn">Квартира</a></li>
-                      <li><a href="#" class="btn">Посуточно</a></li>
-                      <li><a href="#" class="btn">Квартира</a></li>
-                      <li><a href="#" class="btn">Посуточно</a></li>
-                    </ul>
+                  <div class="wrap-box">
+                    <div class="text-info">
+                      <h4>Водитель на своем автомобиле представительского класса</h4>
+                      <address>
+                        <strong class="city">Киев (Киевская область, Печерский)</strong>  
+                      </address>
+                      <span class="icon"><i class="icon-cog"></i>> 5 лет опыта</span>
+                    </div>
+                    <div class="info-box text-right">
+                      <h3>20000 грн/мес.</h3>
+                      <ul class="btn-list">
+                        <li><a href="#" class="btn green">Новое</a></li>
+                      </ul>
+                    </div>
+                  </div> 
+                  <p><strong>Описание вакансии:</strong> “Водительское удостоверение категории "В.Стаж вождения 16 лет...” <a href="#">Подробнее</a></p>
+                  <ul class="btn-list">
+                    <li><a href="#" class="btn">Частный дом</a></li>
+                    <li><a href="#" class="btn">Квартира</a></li>
+                    <li><a href="#" class="btn">Посуточно</a></li>
+                    <li><a href="#" class="btn">Квартира</a></li>
+                    <li><a href="#" class="btn">Посуточно</a></li>
+                    <li><a href="#" class="btn">Квартира</a></li>
+                    <li><a href="#" class="btn">Посуточно</a></li>
+                  </ul>
+                  <div class="wrap-box">
                     <a href="#" class="btn blue pull-right"><span>+</span>В избранное</a>
                   </div>
                 </div>
@@ -557,7 +642,6 @@
     <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
     <script src="js/jquery.main.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="js/masonry-docs.min.js" type="text/javascript"></script>
     <script type="text/javascript">
       if (navigator.userAgent.match(/IEMobile/10.0/)  navigator.userAgent.match(/MSIE 10.*Touch/)) {
       var msViewportStyle = document.createElement('style')

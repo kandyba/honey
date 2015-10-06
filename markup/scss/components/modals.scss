@@ -6,6 +6,8 @@
 	padding-top:9px;
 	padding-bottom:60px;
 	font-size:16px;
+	margin:0 auto;
+	max-width: 748px;
 	h4{
 		font-size:25px;
 		margin-bottom:44px;
@@ -13,6 +15,44 @@
 	p{
 		color:$grey-color;
 	}
+	&.modal2{
+		h4{
+			margin:0 0 20px;
+		}
+		label{
+			font-weight:bold;
+			color:#000;
+			display: inline-block;
+			vertical-align: top;
+			margin:0 0 11px;
+			font-size:15px;
+		}
+		.modal-footer{
+			border-top: 2px solid #eeeee6;
+			padding:29px 0 20px;
+		}
+		.btn{
+			min-width:180px;
+		}
+		.checkbox{
+			.jcf-checkbox{
+				display: inline-block;
+				vertical-align: middle;
+			}
+			label{
+				margin:0;
+				max-width: 90%;
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+	}
+}
+
+#sidebar .side-box .modal-body p{
+	font-size: 15px;
+	line-height: 18px;
+	margin: 0 0 23px;
 }
 
 .modal-header{

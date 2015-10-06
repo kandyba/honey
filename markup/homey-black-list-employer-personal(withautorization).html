@@ -124,7 +124,133 @@
               </div>
               <h3>Был негативный опыт с работодателем?</h3>
               <p>Добавьте его данные в черный список.</p>
-              <a href="#" class="btn red">Добавить работодателя</a>
+              <a href="#" class="btn red" data-toggle="modal" data-target="#myModal4">Добавить работодателя</a>
+              <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body modal2">
+                      <h4>Добавление работника в черный список</h4>
+                      <p>Укажите известные вам данные о работнике для добавления его в базу.  * - поля,  обязательные для заполнения</p>
+                      <form action="#">
+                        <fieldset>
+                          <div class="row">
+                            <div class="col-md-8">
+                              <label for="label1">*Имя и фамилия работника</label>
+                              <div class="form-group invalid">
+                                <input id="label1" type="text" placeholder="Имя и фамилия работника" required>
+                                <div class="invalid-massege">Поле обязательно для заполнения</div>
+                              </div>
+                              <div class="form-group">
+                                <label for="label1">*Должность</label>
+                                <select>
+                                  <option>Выберите должность</option>
+                                  <option>Домработница</option>
+                                  <option>Повар</option>
+                                  <option>Няня/гувернантка</option>
+                                  <option>Сиделка</option>
+                                  <option>Садовник/хозяйственник</option>
+                                  <option>Водитель</option>
+                                  <option>Управляющий домом</option>
+                                  <option>Репетитор</option>
+                                  <option>Охранник</option>
+                                </select>
+                                <div class="invalid-massege">Поле обязательно для заполнения</div>
+                              </div>
+                              <div class="form-group">
+                                <label for="label1">*Дата рождения</label>
+                                <div id="sandbox-container">
+                                  <input type="text" placeholder="Выберете дату">
+                                </div>
+                                <div class="invalid-massege">Поле обязательно для заполнения</div>
+                              </div>
+                              <div class="form-group">
+                                <label for="label1">Город проживания</label>
+                                <select>
+                                  <option>Выберете город</option>
+                                  <option>Вся Украина</option>
+                                  <option>Киев</option>
+                                  <option>Днепропетровск</option>
+                                  <option>Кривой рог</option>
+                                  <option>Запорожье</option>
+                                  <option>Львов</option>
+                                  <option>Одесса</option>
+                                  <option>Донецк</option>
+                                  <option>Харьков</option>
+                                  <option>Другие страны</option>
+                                  <option class="another">Другой регион</option>
+                                </select>
+                                <div class="invalid-massege">Поле обязательно для заполнения</div>
+                              </div>
+                              <div class="form-group">
+                                <label for="label1">*Город поиска работы</label>
+                                <select>
+                                  <option>Вся Украина</option>
+                                  <option>Киев</option>
+                                  <option>Днепропетровск</option>
+                                  <option>Кривой рог</option>
+                                  <option>Запорожье</option>
+                                  <option>Львов</option>
+                                  <option>Одесса</option>
+                                  <option>Донецк</option>
+                                  <option>Харьков</option>
+                                  <option>Другие страны</option>
+                                  <option class="another">Другой регион</option>
+                                </select>
+                                <div class="invalid-massege">Поле обязательно для заполнения</div>
+                              </div>
+                              <div class="form-group">
+                                <label for="label1">*Фотография работодателя</label>
+                                <input type="file" data-jcf='{"buttonText": "Добавить фото"}'>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="form-frame">
+                              <div class="col-md-8">
+                                <div class="form-group">
+                                  <label for="label1">*Причина добавления в черный список</label>
+                                  <select>
+                                    <option>Выберите причину</option>
+                                    <option>Выберите причину</option>
+                                    <option>Выберите причину</option>
+                                    <option>Выберите причину</option>
+                                    <option>Выберите причину</option>
+                                    <option>Выберите причину</option>
+                                    <option>Выберите причину</option>
+                                    <option>Выберите причину</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <label for="label4">Комментарий</label>
+                          <div class="form-group">
+                            <textarea id="label4" cols="3" rows="2" placeholder="Опишите подробнее, почему вас не устроило сотрудничество"></textarea>
+                          </div>
+                          <div class="form-frame">
+                            <label for="label4">Контакты оставившего отзыв</label>
+                            <div class="form-group">
+                              <textarea class="textarea2" id="label4" cols="3" rows="2" placeholder="Укажите ваше имя, телефон или e-mail"></textarea>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="checkbox">
+                              <input id="contact" type="checkbox" checked>
+                              <label for="contact">Скрыть контакты на сайте (будут видны только администратору)</label>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn pull-right blue" type="submit">Отправить</button>
+                          </div>
+                        </fieldset>
+                       </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="side-box">
               <h3 class="text-center">Последние комментарии</h3>
@@ -149,25 +275,25 @@
             <div class="holder">
               <h1 class="h1">Работодатель в черном списке</h1>
               <div class="agent-block">
-                <div class="img-block">
-                  <img src="images/avatar.jpg" alt="image description">
-                  <div class="size-box">
-                    <p>Добавлен в список <time datetime="2015-08-23">23 августа 2015</time></p>
+                <div class="wrap-box">
+                  <div class="img-block">
+                    <img src="images/avatar.jpg" alt="image description">
+                    <div class="size-box">
+                      <p>Добавлен в список <time datetime="2015-08-23">23 августа 2015</time></p>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <h2 class="h2">Иван Иванович</h2>
+                    <div class="info-list">
+                      <div><i class="icon-briefcase"></i><strong>Искал персонал: </strong>садовник/хозяйственник</div>
+                      <div><i class="icon-location ye-icon"></i><strong>Город: </strong>Киев (Киевская область, Печерский)</div>
+                      <div><i class="icon-location green"></i><strong>Город поиска работы: </strong>Киев</div>
+                      <div class="status"><i class="icon-frown"></i><strong>Причина занесения: </strong>непрофессионализм</div>
+                    </div>
                   </div>
                 </div>
-                <div class="text">
-                  <h2 class="h2">Иван Иванович</h2>
-                  <div class="info-list">
-                    <div><i class="icon-briefcase"></i><strong>Искал персонал: </strong>садовник/хозяйственник</div>
-                    <div><i class="icon-location ye-icon"></i><strong>Город: </strong>Киев (Киевская область, Печерский)</div>
-                    <div><i class="icon-location green"></i><strong>Город поиска работы: </strong>Киев</div>
-                    <div class="status"><i class="icon-frown"></i><strong>Причина занесения: </strong>непрофессионализм</div>
-                  </div>
-                </div>
-                <div class="pull-left">
-                  <p>Предложили работу домработницы на желаемый график работы и оплату. Хорошая семья и отличный работодатель. Обьект ей показала бывшая домработница , все рассказала Обьект ей показала бывшая. Предложили работу домработницы на желаемый график работы и оплату. Хорошая семья и отличный работодатель.</p>
-                  <h6>Контакты автора отзыва: <span>доступны только администраторам</span></h6>
-                </div>
+                <p>Предложили работу домработницы на желаемый график работы и оплату. Хорошая семья и отличный работодатель. Обьект ей показала бывшая домработница , все рассказала Обьект ей показала бывшая. Предложили работу домработницы на желаемый график работы и оплату. Хорошая семья и отличный работодатель.</p>
+                <h6>Контакты автора отзыва: <span>доступны только администраторам</span></h6>
               </div>
               <div class="info-block">
                 <div class="text-frame">
@@ -189,8 +315,8 @@
                   </div>
                   <div class="row">
                     <div class="col-md-9">
-                      <h4><span>Добавить комментарий</span></h4>
                       <form action="#" class="comment-form">
+                        <h4>Добавить комментарий</h4>
                         <fieldset>
                           <div class="form-group">
                             <input type="text" placeholder="Ваше имя">
@@ -303,7 +429,8 @@
     <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
     <script src="js/jquery.main.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="js/masonry-docs.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap-datepicker.js" type="text/javascript"></script>
+    <script src="js/bootstrap-datepicker.ru.min.js" type="text/javascript"></script>
     <script type="text/javascript">
       if (navigator.userAgent.match(/IEMobile/10.0/)  navigator.userAgent.match(/MSIE 10.*Touch/)) {
       var msViewportStyle = document.createElement('style')

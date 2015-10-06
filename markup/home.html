@@ -83,40 +83,44 @@
                 <div class="modal-body">
                   <h4 class="text-center">Регистрация</h4>
                   <div class="modal-form">
-                    <strong class="title">Вы регистрируетесь как:</strong>
-                    <ul class="form-row">
-                      <li>
-                        <input type="radio" id="radio" checked name="group">
-                        <label for="radio">Соискатель</label>
-                      </li>
-                      <li>
-                        <input type="radio" id="radio2" name="group">
-                        <label for="radio2">Работодатель</label>
-                      </li>
-                      <li>
-                        <input type="radio" id="radio3" name="group">
-                        <label for="radio3">Агентство</label>
-                      </li>
-                    </ul>
-                    <div class="form-group invalid">
-                      <input type="text" placeholder="Имя и фамилия">
-                      <div class="invalid-massege">Введите имя</div>
-                    </div>
-                    <div class="form-group">
-                      <input type="email" placeholder="E-mail">
-                      <div class="invalid-massege">Невалидный имейл</div>
-                    </div>
-                    <div class="form-group">
-                      <input type="password" placeholder="Пароль">
-                    </div>
-                    <div class="form-group">
-                      <input type="password" placeholder="Введите пароль еще раз">
-                      <div class="invalid-massege">Пароли не совпадают</div>
-                    </div>
-                    <div class="form-group">
-                      <button class="btn large green" type="submit">Зарегистрироваться</button>
-                    </div>
-                    <div class="text-center"><a href="#">Уже зарегестрированы?</a></div>
+                   <form action="#">
+                    <fieldset>
+                      <strong class="title">Вы регистрируетесь как:</strong>
+                        <ul class="form-row">
+                          <li>
+                            <input type="radio" id="radio" checked name="group">
+                            <label for="radio">Соискатель</label>
+                          </li>
+                          <li>
+                            <input type="radio" id="radio2" name="group">
+                            <label for="radio2">Работодатель</label>
+                          </li>
+                          <li>
+                            <input type="radio" id="radio3" name="group">
+                            <label for="radio3">Агентство</label>
+                          </li>
+                        </ul>
+                        <div class="form-group invalid">
+                          <input type="text" placeholder="Имя и фамилия">
+                          <div class="invalid-massege">Введите имя</div>
+                        </div>
+                        <div class="form-group">
+                          <input type="email" placeholder="E-mail">
+                          <div class="invalid-massege">Невалидный имейл</div>
+                        </div>
+                        <div class="form-group">
+                          <input type="password" placeholder="Пароль">
+                        </div>
+                        <div class="form-group">
+                          <input type="password" placeholder="Введите пароль еще раз">
+                          <div class="invalid-massege">Пароли не совпадают</div>
+                        </div>
+                        <div class="form-group">
+                          <button class="btn large green" type="submit">Зарегистрироваться</button>
+                        </div>
+                        <div class="text-center"><a href="#">Уже зарегестрированы?</a></div>
+                    </fieldset>
+                   </form>
                   </div>
                 </div>
               </div>
@@ -507,7 +511,6 @@
     <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
     <script src="js/jquery.main.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="js/masonry-docs.min.js" type="text/javascript"></script>
     <script type="text/javascript">
       if (navigator.userAgent.match(/IEMobile/10.0/)  navigator.userAgent.match(/MSIE 10.*Touch/)) {
       var msViewportStyle = document.createElement('style')
