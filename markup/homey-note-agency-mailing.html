@@ -17,13 +17,13 @@
             <div class="logo-box">
               <a href="#"><img alt="honey" src="images/logo.png"></a>
               <button type="button" class="country" data-toggle="modal" data-target="#myModal3">
-                <span class="img-box">
+                <div class="img-box">
                   <img src="images/ukr.png" alt="image description">
-                </span>
+                </div>
                 <span class="name">Украина</span>
                 <i class="icon-down-open"></i>
               </button>
-              <div class="modal fade modal-size2" id="myModal3" tabindex="-1" role="dialog"  >
+              <div class="modal fade modal-size2" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -35,22 +35,22 @@
                           <ul class="country-list">
                             <li>
                               <label for="ukraine">
-                                <span class="img-box">
+                                <div class="img-box">
                                   <img src="images/ukraine.png" alt="ukraine">
-                                </span>
-                                <span>
+                                </div>
+                                <div>
                                   <input id="ukraine" type="radio" name="group" checked>
                                       Украина
-                                </span>
+                                </div>
                               </label>
                             </li>
                             <li>
                               <label for="russian">
                                 <img src="images/russian.png" alt="russian">
-                                <span>
+                                <div>
                                   <input id="russian" type="radio" name="group">
                                       Россия
-                                </span>
+                                </div>
                               </label>
                             </li>
                           </ul>
@@ -74,7 +74,7 @@
             </nav>
           </div>
           <button type="button" class="btn pull-right" data-toggle="modal" data-target="#myModal">Личный кабинет</button>
-          <div class="modal fade modal-size2" id="myModal" tabindex="-1" role="dialog"  >
+          <div class="modal fade modal-size2" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
@@ -117,7 +117,7 @@
             <div class="side-box">
               <h3 class="text-center"><span>Доступ к базе персонала</span></h3>
               <ul class="qty-list">
-                <li><strong>Доступно вакансий: <a href="#">0</a></strong></li>
+                <li><strong>Доступно вакансий: <a href="#">0</strong></a></li>
                 <li><strong>Доступно контактов: <a href="#">0</a></strong></li>
               </ul>
               <p>Оплатите доступ к базе персонала и открывайте контакты в резюме, чтобы предложить им работу. Соискатели не видят ваших контактов и не смогут связаться с вами.</p>
@@ -189,7 +189,7 @@
                       </div>
                       <div class="box pull-right text-right">
                         <h5><span>Сделать горячей</span></h5>
-                        <div class="size-box"><p>Обновлено <time datetime="2015-07-01">1 июля 2015</time>- <a href="#">обновить</a></p></div>
+                        <div class="size-box"><p>Обновлено <time datetime="2015-07-1">1 июля 2015</time>- <a href="#">обновить</a></p></div>
                         <ul class="control-list">
                           <li><a href="#">Приостановить</a></li>
                           <li><a href="#">Изменить</a></li>
@@ -210,7 +210,7 @@
                       </div>
                       <div class="box pull-right text-right">
                         <h5><span>Сделать VIP</span></h5>
-                        <div class="size-box"><p>Обновлено <time datetime="2015-07-01">1 июля 2015</time>- <a href="#">обновить</a></p></div>
+                        <div class="size-box"><p>Обновлено <time datetime="2015-07-1">1 июля 2015</time>- <a href="#">обновить</a></p></div>
                         <ul class="control-list">
                           <li><a href="#">Приостановить</a></li>
                           <li><a href="#">Изменить</a></li>
@@ -231,7 +231,7 @@
                       </div>
                       <div class="box pull-right text-right">
                         <h5><span>Сделать VIP</span></h5>
-                        <div class="size-box"><p>Обновлено <time datetime="2015-07-01">1 июля 2015</time>- <a href="#">обновить</a></p></div>
+                        <div class="size-box"><p>Обновлено <time datetime="2015-07-1">1 июля 2015</time>- <a href="#">обновить</a></p></div>
                         <ul class="control-list">
                           <li><a href="#">Приостановить</a></li>
                           <li><a href="#">Изменить</a></li>
@@ -262,7 +262,7 @@
                     <div class="item-box">
                       <div class="wrap-box alt">
                         <span class="item full-name pull-left">Имя и фамилия</span>
-                        <a href="#" class="pull-right">Изменить</a>
+                        <a href="#" class="pull-right change-btn">Изменить</a>
                       </div>
                       <p>Сергей Иванов</p>
                     </div>
@@ -274,7 +274,7 @@
                           <i class="icon-briefcase"></i>
                           Должность
                         </span>
-                        <a href="#" class="pull-right">Изменить</a>
+                        <a href="#" class="pull-right change-btn">Изменить</a>
                       </div>
                       <p>Менеджер</p>
                     </div>
@@ -283,7 +283,7 @@
                     <div class="item-box">
                       <div class="wrap-box alt">
                         <span class="item n-phone pull-left">Телефон сотрудника</span>
-                        <a href="#" class="pull-right">Изменить</a>
+                        <a href="#" class="pull-right change-btn">Изменить</a>
                       </div>
                       <p><a href="tel:7-917-00-00-000">+7 (917) 00-00-000</a></p>
                       <a href="#" class="add-number">Добавить еще один номер</a>
@@ -296,14 +296,189 @@
                     <div class="item-box">
                       <div class="wrap-box alt">
                         <span class="item email pull-left">E-mail</span>
-                        <a href="#" class="pull-right">Изменить</a>
+                        <a href="#" class="pull-right change-btn">Изменить</a>
                       </div>
                       <p><a href="mailto:&#101;&#045;&#109;&#097;&#105;&#108;&#064;&#046;&#099;&#111;&#109;">&#101;&#045;&#109;&#097;&#105;&#108;&#064;&#046;&#099;&#111;&#109;</a></p>
                     </div>
                   </div>
                   <div class="info-block">
                     <div class="item-box">
-                      <span class="item lock"></span>
+                      <span class="item lock">Изменить пароль</span>
+                      <form action="#" class="password-form">
+                        <fieldset>
+                          <div class="form-group">
+                            <label>Старый пароль</label>
+                            <input type="text" placeholder="Введите ранее используемый пароль">
+                          </div>
+                          <div class="form-group">
+                            <label>Новый пароль</label>
+                            <input type="text" placeholder="Придумайте новый пароль">
+                          </div>
+                          <div class="form-group">
+                            <label>Подтверждение пароля</label>
+                            <input type="text" placeholder="Введите новый пароль еще раз">
+                          </div>
+                        </fieldset>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="holder">
+                  <h2>Профиль агентства</h2>
+                  <p>Соискателям важно знать, с каким агентством они будут сотрудничать. Расскажите о лучших сторонах вашего агентства. Поддерживайте полноту и актуальность этой информации</p>
+                  <div class="info-block">
+                    <div class="item-box">
+                      <div class="wrap-box alt">
+                        <span class="item agency pull-left">Название агентства</span>
+                        <a href="#" class="pull-right change-btn">Изменить</a>
+                      </div>
+                      <p>Азбука Семьи</p>
+                    </div>
+                  </div>
+                  <div class="info-block">
+                    <div class="item-box">
+                      <div class="wrap-box alt">
+                        <span class="item website pull-left">Веб-сайт</span>
+                        <a href="#" class="pull-right change-btn">Изменить</a>
+                      </div>
+                      <p><a href="#">abc-f.com.ua</a></p>
+                    </div>
+                  </div>
+                  <div class="info-block">
+                    <div class="item-box">
+                      <span class="item n-phone">Телефоны агентства</span>
+                      <div class="wrap-box alt">
+                        <h6 class="pull-left">Заказ персонала</h6>
+                        <a href="#" class="pull-right change-btn">Изменить</a>
+                      </div>
+                      <p><a href="tel:(044) 209-62-13">(044) 209-62-13</a></p>
+                      <div class="wrap-box alt">
+                        <h6 class="pull-left">Работа</h6>
+                        <a href="#" class="pull-right change-btn">Изменить</a>
+                      </div>
+                      <p><a href="tel:(044) 209-62-14">(044) 209-62-14</a></p>
+                      <a href="#" class="add-number">Добавить еще один номер</a>
+                    </div>
+                  </div>
+                  <div class="info-block">
+                    <div class="item-box">
+                      <div class="wrap-box alt">
+                        <span class="item email alt pull-left">E-mail</span>
+                        <a href="#" class="pull-right change-btn">Изменить</a>
+                      </div>
+                      <p><a href="mailto:&#105;&#110;&#102;&#111;&#064;&#097;&#098;&#099;&#045;&#102;&#046;&#099;&#111;&#109;&#046;&#117;&#097;">&#105;&#110;&#102;&#111;&#064;&#097;&#098;&#099;&#045;&#102;&#046;&#099;&#111;&#109;&#046;&#117;&#097;</a></p>
+                    </div>
+                  </div>
+                  <div class="info-block">
+                    <div class="item-box">
+                      <div class="wrap-box alt">
+                        <span class="item region pull-left">Страна</span>
+                        <a href="#" class="pull-right change-btn">Изменить</a>
+                      </div>
+                      <p>Украина</p>
+                      <div class="wrap-box alt">
+                        <span class="item region pull-left">Город</span>
+                        <a href="#" class="pull-right change-btn">Изменить</a>
+                      </div>
+                      <p>Киев</p>
+                      <div class="wrap-box alt">
+                        <span class="item metro pull-left">Ближайшее метро</span>
+                        <a href="#" class="pull-right change-btn">Изменить</a>
+                      </div>
+                      <p>Олимпийская</p>
+                    </div>
+                  </div>
+                  <div class="info-block">  
+                    <div class="item-box">
+                      <div class="wrap-box alt">
+                        <span class="item agency pull-left">Адрес агентства</span>
+                        <a href="#" class="pull-right change-btn">Изменить</a>
+                      </div>
+                      <p>Ул. Красноармейская 71Б, оф. 21, 2 этаж</p>
+                    </div>
+                  </div>
+                  <div class="info-block">  
+                    <div class="item-box">
+                      <div class="wrap-box alt">
+                        <span class="item clock pull-left">Время работы</span>
+                        <a href="#" class="pull-right change-btn">Изменить</a>
+                      </div>
+                      <p>С понедельника по пятницу, 10.00-18.00</p>
+                    </div>
+                  </div>
+                  <div class="info-block">
+                    <div class="item-box">
+                      <div class="wrap-box alt">
+                        <span class="item post pull-left">
+                          <i class="icon-briefcase"></i>
+                          Услуги для соискателей
+                        </span>
+                        <a href="#" class="pull-right change-btn">Изменить</a>
+                      </div>
+                      <ul class="text-list">
+                        <li>Трудоустройств домашнего персонала в Украине и за границей</li>
+                        <li>Разовые подработки</li>
+                        <li>Курсы домашнего персонала</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="info-block">
+                    <div class="item-box">
+                      <div class="wrap-box alt">
+                        <span class="item post pull-left">
+                          <i class="icon-briefcase"></i>
+                          Услуги для работодателей
+                        </span>
+                        <a href="#" class="change-btn pull-right">Изменить</a>
+                      </div>
+                      <ul class="text-list">
+                        <li>Подбор домашнего персонала в Украине и за границу</li>
+                        <li>Экспресс - персонал (разовые уборки, няня почасово)</li>
+                        <li>Курсы домашнего персонала</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="info-block">
+                    <div class="item-box">
+                      <div class="wrap-box alt">
+                        <span class="item pull-left">Дополнительная информация</span>
+                        <a href="#" class="change-btn pull-right">Изменить</a>
+                      </div>
+                      <p>Необходимые документы для прохождения анкетирования:</p>
+                      <ul class="text-list">
+                        <li>Паспорт гр. Укрrаины,</li>
+                        <li>Идентификационный номер</li>
+                        <li>Дипломы, свидетельства об окончании учебных заведений,</li>
+                        <li>Трудовая книжка,</li>
+                        <li>Медицинская книжка или справки о состоянии здоровья,</li>
+                        <li>Рекомендательные письма с прежних мест работ при наличии,</li>
+                        <li>Фото 3х4,</li>
+                        <li>Копии паспорта и идент. номера,</li>
+                        <li>Приветствуется наличие резюме.</li>
+                      </ul>
+                    </div>
+                    <div class="company-info">
+                      <h4><span>Доступно только струдникам сайта<br>(заполняется обязательно)</span></h4>
+                      <div class="wrap-box">
+                        <h5 class="pull-left">Свидетельство регистрации компании или ЧП:</h5>
+                        <div class="pull-right btn-set">
+                          <a href="#" class="change-btn">Изменить</a>
+                          <a href="#" class="del-btn">Удалить</a>
+                        </div>
+                      </div>
+                      <div class="img-block">
+                        <img src="images/img-23.jpg" alt="image description">
+                      </div>
+                      <div class="wrap-box alt">
+                        <span class="item pull-left">Год создания агентства</span>
+                        <a href="#" class="pull-right change-btn">Изменить</a>
+                      </div>
+                      <p>2006</p>
+                      <div class="wrap-box alt">
+                        <span class="item pull-left">ФИО директора</span>
+                        <a href="#" class="pull-right change-btn">Изменить</a>
+                      </div>
+                      <p>Олимп Александра Эдуардовна</p>
                     </div>
                   </div>
                 </div>
@@ -505,7 +680,7 @@
               </li>
             </ul>
             <button type="button" class="btn empty" data-toggle="modal" data-target="#myModal2">Помощь</button>
-            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog"  >
+            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
