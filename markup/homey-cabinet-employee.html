@@ -115,20 +115,26 @@
         <main role="main" id="main">
           <aside id="sidebar">
             <div class="side-box">
-              <h3 class="text-center"><span>Доступ к базе персонала</span></h3>
-              <ul class="qty-list">
-                <li><strong>Доступно вакансий: <a href="#">0</a></strong></li>
-                <li><strong>Доступно контактов: <a href="#">0</a></strong></li>
-              </ul>
-              <p>Оплатите доступ к базе персонала и открывайте контакты в резюме, чтобы предложить им работу. Соискатели не видят ваших контактов и не смогут связаться с вами.</p>
-              <a href="#" class="btn blue">Оплатить доступ</a>
+              <h3 class="text-center"><span class="text">Что такое VIP-резюме?</span></h3>
+              <p>VIP резюме размещается в списке резюме выше стандартных, выделяются яркой кнопкой и выводятся на страницах сайтав отдельном блоке.</p>
+              <strong>Статус VIP резюме действует 1 месяц</strong>
             </div>
             <div class="side-box">
-              <h3 class="text-center">Что такое горячая вакансия?</h3>
-              <p>Горячая вакансия размещается в списке вакансий выше стандартных, выделяется яркой кнопкой и выводится на страницах сайта в отдельном блоке. Статус Горячей вакансии действует 1 месяц, </p>
+              <h3 class="text-center">Как узнать контакты работодателя?</h3>
+              <p>Контакты работодателей скрыты для всех соискателей. Работодатель сам отбирает вас по резюме и связывается с вами. Вы можете отправить свое резюме на интересующую вас вакансию.</p>
             </div>
             <div class="side-box">
-              <h3 class="text-center">Помощь по сайту</h3>
+              <h3 class="text-center">Статус проверенного пользователя</h3>
+              <p>Загрузите свои документы и получите статус проверенного пользователя</p>
+              <a href="#" class="btn green" data-toggle="modal" data-target="#myModal6">Пройти проверку</a>
+            </div>
+            <div class="side-box">
+              <h3 class="text-center">Видео-резюме</h3>
+              <p>Закажите персональное видео-резюме, которое мы запишем с Вашим участием.</p>
+              <a href="#" class="btn ye-btn" data-toggle="modal" data-target="#myModal5">Заказать</a>  
+            </div>
+            <div class="side-box">
+              <h3 class="text-center">Помощь по сайту </h3>
               <p>Возникли вопросы? Мы  с радостью на них ответим!</p>
               <a href="#" class="btn blue">Задать вопрос</a>
             </div>
@@ -141,28 +147,35 @@
               </div>
               <div class="agent-block">
                 <div class="img-block">
-                  <a href="#"><img src="images/partner-6.png" alt="image description"></a>
+                  <div class="special-box">
+                    <a href="#"><img src="images/avatar.jpg" alt="image description"></a>
+                    <form class="file-form" action="#">
+                      <fieldset>
+                        <input type="file" data-jcf='{"buttonText": "Изменить фото"}'>
+                      </fieldset>
+                    </form>
+                  </div>
                   <p>Дата регистрации <time datetime="2015-08-23">23 августа 2015</time></p>
                 </div>
                 <div class="text">
                   <div class="title-box">
-                    <h2 class="pull-left">Азбука семьи</h2>
+                    <h2 class="pull-left">Сергей Иванович</h2>
                   </div>
                   <div class="info-list">
-                    <div><i class="icon-briefcase grey"></i><strong>Всего вакансий:</strong> 2</div>
-                    <div class="active"><i class="icon-briefcase"></i><strong>Активных вакансий:</strong> 2</div>
+                    <div><i class="icon-briefcase grey"></i><strong>Всего резюме:</strong> 2</div>
+                    <div class="active"><i class="icon-briefcase"></i><strong>Активных резюме:</strong> 1</div>
                   </div>
                   <div class="btn-area">
-                    <a href="#" class="btn ye-btn">Создать вакансию</a>
-                    <a href="#" class="btn blue">Искать персонал</a>
+                    <a href="#" class="btn ye-btn">Разместить резюме</a>
+                    <a href="#" class="btn blue">Искать работу</a>
                   </div>
                 </div>
               </div>
               <ul class="nav nav-tabs" role="tablist">
-                <li><a href="#tab1" data-toggle="tab">Вакансии</a></li>
-                <li><a href="#tab2" data-toggle="tab">Профиль агентства</a></li>
-                <li class="active"><a href="#tab3" data-toggle="tab">Рассылки</a></li>
-                <li><a href="#tab4" data-toggle="tab">Избранные резюме</a></li>
+                <li class="active"><a href="#tab1" data-toggle="tab">Мои резюме</a></li>
+                <li><a href="#tab2" data-toggle="tab">Личная информация</a></li>
+                <li><a href="#tab3" data-toggle="tab">Рассылки</a></li>
+                <li><a href="#tab4" data-toggle="tab">Избранные вакансии</a></li>
                 <li><a href="#tab5" data-toggle="tab">Черный список</a></li>
               </ul>
             </div>
@@ -173,22 +186,22 @@
                     <h2 class="pull-left">Вакансии <strong>(3)</strong></h2>
                     <ul class="tab-list pull-right">
                       <li class="active"><a href="#">Все</a></li>
-                      <li><a href="#">Активные</a></li>
-                      <li><a href="#">Не активные</a></li>
+                      <li><a href="#">Только активные</a></li>
                     </ul>
                   </header>
                   <div class="info-block">
                     <h4><span>Домработница два раза в неделю</span></h4>
-                    <span class="status-text active">Вакансия доступна на сайте</span>
+                    <div class="wrap-box">
+                      <span class="pull-left status-text active">Реэюме опубликовано на сайте</span>
+                      <a href="#" class="govip-btn pull-right"><strong>Сделать VIP</strong></a>
+                    </div>
                     <div class="control-block">
                       <div class="box pull-left">
                         <ul class="qty-list">
                           <li><strong>Просмотров: 65</strong></li>
-                          <li><strong>Откликов: <a href="#">23</a></strong></li>
                         </ul>
                       </div>
                       <div class="box pull-right text-right">
-                        <h5><span>Сделать горячей</span></h5>
                         <div class="size-box"><p>Обновлено <time datetime="2015-07-1">1 июля 2015</time>- <a href="#">обновить</a></p></div>
                         <ul class="control-list">
                           <li><a href="#">Приостановить</a></li>
@@ -200,16 +213,17 @@
                   </div>
                   <div class="info-block">
                     <h4><span>Домработница два раза в неделю</span></h4>
-                    <span class="status-text stop">Вкансия приостановлена</span>
+                    <div class="wrap-box">
+                      <span class="pull-left status-text stop">Резюме приостановлено</span>
+                      <a href="#" class="govip-btn pull-right"><strong>Сделать VIP</strong></a>
+                    </div>
                     <div class="control-block">
                       <div class="box pull-left">
                         <ul class="qty-list">
                           <li><strong>Просмотров: 65</strong></li>
-                          <li><strong>Откликов: <a href="#">23</a></strong></li>
                         </ul>
                       </div>
                       <div class="box pull-right text-right">
-                        <h5><span>Сделать VIP</span></h5>
                         <div class="size-box"><p>Обновлено <time datetime="2015-07-1">1 июля 2015</time>- <a href="#">обновить</a></p></div>
                         <ul class="control-list">
                           <li><a href="#">Приостановить</a></li>
@@ -221,16 +235,17 @@
                   </div>
                   <div class="info-block">
                     <h4><span>Домработница два раза в неделю</span></h4>
-                    <span class="status-text reject">Вакансия отклонена модератором</span>
+                    <div class="wrap-box">
+                      <span class="pull-left status-text reject">Резюме отклонено модератором</span>
+                      <a href="#" class="govip-btn pull-right"><strong>Сделать VIP</strong></a>
+                    </div>
                     <div class="control-block">
                       <div class="box pull-left">
                         <ul class="qty-list">
                           <li><strong>Просмотров: 65</strong></li>
-                          <li><strong>Откликов: <a href="#">23</a></strong></li>
                         </ul>
                       </div>
                       <div class="box pull-right text-right">
-                        <h5><span>Сделать VIP</span></h5>
                         <div class="size-box"><p>Обновлено <time datetime="2015-07-1">1 июля 2015</time>- <a href="#">обновить</a></p></div>
                         <ul class="control-list">
                           <li><a href="#">Приостановить</a></li>
@@ -244,7 +259,7 @@
               </div>
               <div role="tabpanel" class="tab-pane" id="tab2">
                 <div class="holder">
-                  <h2>Данные контактного лица агентства</h2>
+                  <h2>Основная информация</h2>
                   <div class="info-block">
                     <div class="item-box">
                       <span class="item sex">Пол</span>
@@ -260,38 +275,147 @@
                       </ul>
                     </div>
                     <div class="item-box">
-                      <div class="wrap-box alt">
-                        <span class="item full-name pull-left">Имя и фамилия</span>
-                        <a href="#" class="pull-right change-btn">Изменить</a>
+                      <div class="normal-state">
+                        <div class="wrap-box alt">
+                          <span class="item full-name pull-left">Имя и фамилия</span>
+                          <a href="#" class="pull-right change-btn">Изменить</a>
+                        </div>
+                        <p>Сергей Иванов</p>
+                      </div>  
+                      <div class="active-state">
+                        <div class="wrap-box alt">
+                          <span class="item full-name pull-left">Имя и фамилия</span>
+                        </div>
+                        <form action="#">
+                          <fieldset>
+                            <div class="form-group">
+                              <div class="pull-left">
+                                <input type="text" placeholder="Введите имя">
+                              </div>
+                              <ul class="control-btn pull-left">
+                                <li><a href="#" class="check"></a></li>
+                                <li><a href="#" class="del"></a></li>
+                              </ul>
+                            </div>
+                          </fieldset>
+                        </form>
                       </div>
-                      <p>Сергей Иванов</p>
                     </div>
                   </div>
                   <div class="info-block">
                     <div class="item-box">
                       <div class="wrap-box alt">
-                        <span class="item post pull-left">
-                          <i class="icon-briefcase"></i>
-                          Должность
-                        </span>
+                        <span class="item date pull-left">Дата рождения</span>
                         <a href="#" class="pull-right change-btn">Изменить</a>
                       </div>
-                      <p>Менеджер</p>
+                      <div class="normal-state">
+                        <p><time datetime="1955-08-09">9 августа 1955</time></p>
+                      </div>
+                      <div class="active-state">
+                        <form action="#">
+                          <fieldset>
+                            <div class="form-group">
+                              <div id="sandbox-container" class="pull-left">
+                                <input type="text" placeholder="Выберете дату">
+                              </div>
+                              <ul class="control-btn pull-left">
+                                <li><a href="#" class="check"></a></li>
+                                <li><a href="#" class="del"></a></li>
+                              </ul>
+                              <div class="invalid-massege">Поле обязательно для заполнения</div>
+                            </div>
+                          </fieldset>
+                        </form>
+                      </div>  
                     </div>
                   </div>
                   <div class="info-block">
                     <div class="item-box">
                       <div class="wrap-box alt">
-                        <span class="item n-phone pull-left">Телефон сотрудника</span>
+                        <span class="item region pull-left">Страна</span>
                         <a href="#" class="pull-right change-btn">Изменить</a>
                       </div>
-                      <p><a href="tel:7-917-00-00-000">+7 (917) 00-00-000</a></p>
-                      <a href="#" class="add-number">Добавить еще один номер</a>
+                      <p>Украина</p>
+                      <div class="wrap-box alt">
+                        <span class="item region pull-left">Город</span>
+                        <a href="#" class="pull-right change-btn">Изменить</a>
+                      </div>
+                      <p>Киев</p>
                     </div>
                   </div>
                 </div>
                 <div class="holder">
-                  <h2>Авторизация</h2>
+                  <h2>Контактные данные и пароль</h2>
+                  <div class="info-block">
+                    <div class="item-box">
+                      <div class="normal-state">
+                        <div class="wrap-box alt">
+                          <span class="item n-phone pull-left">Телефон</span>
+                          <a href="#" class="pull-right change-btn">Изменить</a>
+                        </div>
+                        <p><a href="tel:7-917-00-00-000">+7 (917) 00-00-000</a></p>
+                        <a href="#" class="add-number">Добавить еще один номер</a>
+                      </div>
+                      <div class="active-state">
+                        <div class="wrap-box alt">
+                          <span class="item n-phone pull-left">Телефон</span>
+                        </div>
+                        <form action="#">
+                          <fieldset>
+                            <div class="form-group">
+                              <div class="pull-left">
+                                <input type="text" placeholder="Введите новый номер">
+                              </div>
+                              <ul class="control-btn pull-left">
+                                <li><a href="#" class="check"></a></li>
+                                <li><a href="#" class="del"></a></li>
+                              </ul>
+                            </div>
+                          </fieldset>
+                        </form>
+                        <a href="#" class="add-number">Добавить еще один номер</a>
+                      </div>
+                      <div class="change-state">
+                        <div class="wrap-box alt">
+                          <span class="item n-phone pull-left">Телефон</span>
+                          <a href="#" class="pull-right change-btn">Изменить</a>
+                        </div>
+                        <p><a href="tel:7-917-00-00-000">+7 (917) 00-00-000</a></p>
+                        <form action="#">
+                          <fieldset>
+                            <div class="form-group">
+                              <div class="pull-left">
+                                <input type="text" placeholder="Введите номер">
+                              </div>
+                              <ul class="control-btn pull-left">
+                                <li><a href="#" class="check"></a></li>
+                                <li><a href="#" class="del"></a></li>
+                              </ul>
+                            </div>
+                          </fieldset>
+                        </form>
+                      </div>
+                      <div class="finish-state">
+                        <div class="wrap-box alt">
+                          <span class="item n-phone pull-left">Телефон 1</span>
+                          <div class="pull-right btn-set">
+                            <a class="change-btn" href="#">Изменить</a>
+                            <a class="del-btn" href="#">Удалить</a>
+                          </div>
+                        </div>
+                        <p><a href="tel:7-917-00-00-000">+7 (917) 00-00-000</a></p>
+                        <div class="wrap-box alt">
+                          <span class="item n-phone alt pull-left">Телефон 2</span>
+                          <div class="pull-right btn-set text-right">
+                            <a class="change-btn" href="#">Изменить</a>
+                            <a class="del-btn" href="#">Удалить</a>
+                          </div>
+                        </div>
+                        <p><a href="tel:7-917-00-00-000">+7 (917) 00-00-000</a></p>
+                        <a href="#" class="add-number">Добавить еще один номер</a>
+                      </div>
+                    </div>
+                  </div>
                   <div class="info-block">
                     <div class="item-box">
                       <div class="wrap-box alt">
@@ -317,168 +441,19 @@
                           <div class="form-group">
                             <label>Подтверждение пароля</label>
                             <input type="password" placeholder="Введите новый пароль еще раз">
+                            <div class="invalid-massege">Пароли не совпадают</div>
                           </div>
                         </fieldset>
                       </form>
                     </div>
                   </div>
-                </div>
-                <div class="holder">
-                  <h2>Профиль агентства</h2>
-                  <p>Соискателям важно знать, с каким агентством они будут сотрудничать. Расскажите о лучших сторонах вашего агентства. Поддерживайте полноту и актуальность этой информации</p>
                   <div class="info-block">
                     <div class="item-box">
                       <div class="wrap-box alt">
-                        <span class="item agency pull-left">Название агентства</span>
-                        <a href="#" class="pull-right change-btn">Изменить</a>
+                        <span class="item del-item pull-left">Удаление профиля</span>
                       </div>
-                      <p>Азбука Семьи</p>
-                    </div>
-                  </div>
-                  <div class="info-block">
-                    <div class="item-box">
-                      <div class="wrap-box alt">
-                        <span class="item website pull-left">Веб-сайт</span>
-                        <a href="#" class="pull-right change-btn">Изменить</a>
-                      </div>
-                      <p><a href="#">abc-f.com.ua</a></p>
-                    </div>
-                  </div>
-                  <div class="info-block">
-                    <div class="item-box">
-                      <span class="item n-phone">Телефоны агентства</span>
-                      <div class="wrap-box alt">
-                        <h6 class="pull-left">Заказ персонала</h6>
-                        <a href="#" class="pull-right change-btn">Изменить</a>
-                      </div>
-                      <p><a href="tel:(044) 209-62-13">(044) 209-62-13</a></p>
-                      <div class="wrap-box alt">
-                        <h6 class="pull-left">Работа</h6>
-                        <a href="#" class="pull-right change-btn">Изменить</a>
-                      </div>
-                      <p><a href="tel:(044) 209-62-14">(044) 209-62-14</a></p>
-                      <a href="#" class="add-number">Добавить еще один номер</a>
-                    </div>
-                  </div>
-                  <div class="info-block">
-                    <div class="item-box">
-                      <div class="wrap-box alt">
-                        <span class="item email alt pull-left">E-mail</span>
-                        <a href="#" class="pull-right change-btn">Изменить</a>
-                      </div>
-                      <p><a href="mailto:&#105;&#110;&#102;&#111;&#064;&#097;&#098;&#099;&#045;&#102;&#046;&#099;&#111;&#109;&#046;&#117;&#097;">&#105;&#110;&#102;&#111;&#064;&#097;&#098;&#099;&#045;&#102;&#046;&#099;&#111;&#109;&#046;&#117;&#097;</a></p>
-                    </div>
-                  </div>
-                  <div class="info-block">
-                    <div class="item-box">
-                      <div class="wrap-box alt">
-                        <span class="item region pull-left">Страна</span>
-                        <a href="#" class="pull-right change-btn">Изменить</a>
-                      </div>
-                      <p>Украина</p>
-                      <div class="wrap-box alt">
-                        <span class="item region pull-left">Город</span>
-                        <a href="#" class="pull-right change-btn">Изменить</a>
-                      </div>
-                      <p>Киев</p>
-                      <div class="wrap-box alt">
-                        <span class="item metro pull-left">Ближайшее метро</span>
-                        <a href="#" class="pull-right change-btn">Изменить</a>
-                      </div>
-                      <p>Олимпийская</p>
-                    </div>
-                  </div>
-                  <div class="info-block">  
-                    <div class="item-box">
-                      <div class="wrap-box alt">
-                        <span class="item agency pull-left">Адрес агентства</span>
-                        <a href="#" class="pull-right change-btn">Изменить</a>
-                      </div>
-                      <p>Ул. Красноармейская 71Б, оф. 21, 2 этаж</p>
-                    </div>
-                  </div>
-                  <div class="info-block">  
-                    <div class="item-box">
-                      <div class="wrap-box alt">
-                        <span class="item clock pull-left">Время работы</span>
-                        <a href="#" class="pull-right change-btn">Изменить</a>
-                      </div>
-                      <p>С понедельника по пятницу, 10.00-18.00</p>
-                    </div>
-                  </div>
-                  <div class="info-block">
-                    <div class="item-box">
-                      <div class="wrap-box alt">
-                        <span class="item post pull-left">
-                          <i class="icon-briefcase"></i>
-                          Услуги для соискателей
-                        </span>
-                        <a href="#" class="pull-right change-btn">Изменить</a>
-                      </div>
-                      <ul class="text-list">
-                        <li>Трудоустройств домашнего персонала в Украине и за границей</li>
-                        <li>Разовые подработки</li>
-                        <li>Курсы домашнего персонала</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="info-block">
-                    <div class="item-box">
-                      <div class="wrap-box alt">
-                        <span class="item post pull-left">
-                          <i class="icon-briefcase"></i>
-                          Услуги для работодателей
-                        </span>
-                        <a href="#" class="change-btn pull-right">Изменить</a>
-                      </div>
-                      <ul class="text-list">
-                        <li>Подбор домашнего персонала в Украине и за границу</li>
-                        <li>Экспресс - персонал (разовые уборки, няня почасово)</li>
-                        <li>Курсы домашнего персонала</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="info-block">
-                    <div class="item-box">
-                      <div class="wrap-box alt">
-                        <span class="item pull-left">Дополнительная информация</span>
-                        <a href="#" class="change-btn pull-right">Изменить</a>
-                      </div>
-                      <p>Необходимые документы для прохождения анкетирования:</p>
-                      <ul class="text-list">
-                        <li>Паспорт гр. Укрrаины,</li>
-                        <li>Идентификационный номер</li>
-                        <li>Дипломы, свидетельства об окончании учебных заведений,</li>
-                        <li>Трудовая книжка,</li>
-                        <li>Медицинская книжка или справки о состоянии здоровья,</li>
-                        <li>Рекомендательные письма с прежних мест работ при наличии,</li>
-                        <li>Фото 3х4,</li>
-                        <li>Копии паспорта и идент. номера,</li>
-                        <li>Приветствуется наличие резюме.</li>
-                      </ul>
-                    </div>
-                    <div class="company-info">
-                      <h4><span>Доступно только струдникам сайта<br>(заполняется обязательно)</span></h4>
-                      <div class="wrap-box">
-                        <h5 class="pull-left">Свидетельство регистрации компании или ЧП:</h5>
-                        <div class="pull-right btn-set text-right">
-                          <a href="#" class="change-btn">Изменить</a>
-                          <a href="#" class="del-btn">Удалить</a>
-                        </div>
-                      </div>
-                      <div class="img-block">
-                        <img src="images/img-23.jpg" alt="image description">
-                      </div>
-                      <div class="wrap-box alt">
-                        <span class="item pull-left">Год создания агентства</span>
-                        <a href="#" class="pull-right change-btn">Изменить</a>
-                      </div>
-                      <p>2006</p>
-                      <div class="wrap-box alt">
-                        <span class="item pull-left">ФИО директора</span>
-                        <a href="#" class="pull-right change-btn">Изменить</a>
-                      </div>
-                      <p>Олимп Александра Эдуардовна</p>
+                      <p>Внимание! После удаления профиля восстановить его будет невозможно</p>
+                      <a href="#" class="btn red">Удалить профиль</a>
                     </div>
                   </div>
                 </div>
@@ -509,31 +484,33 @@
                   <h2>Избранные вакансии <strong>(2)</strong></h2>
                   <div class="agent-block">
                     <div class="img-block alt">
-                      <a href="#"><img alt="image description" src="images/avatar7.jpg"></a>
-                      <p>Резюме опубликовано <time datetime="2015-08-23">23 августа 2015</time></p>
+                      <a href="#"><img alt="image description" src="images/partner-6.png"></a>
+                      <strong>Вакансия от кадрового агентства «Азбука семьи»</strong>
+                      <p>Вакансия размещена <time datetime="2015-08-23">23 августа 2015</time></p>
                     </div>
                     <div class="text">
                       <div class="wrap-box">
                         <div class="text-info">
-                          <h4>Вениамин Трофимович</h4>
-                          <div class="info-list">
-                            <div><i class="icon-briefcase"></i><strong>Водитель-телохранитель, водитель руководителя, личный водитель</strong></div>
-                            <div><i class="icon-location ye-icon"></i>Киев (Киевская область, Печерский)</div>
-                            <ul class="person-info">
-                               <li><i class="icon-user"></i><span>33 года</span></li>
-                               <li><i class="icon-cog"></i><span> 3 года опыта</span></li>
-                            </ul>
-                          </div>
+                          <h4>Требуется садовник по уходу за участком 30 соток</h4>
+                          <address>
+                            <strong class="city">Киев (Киевская область, Печерский)</strong>  
+                          </address>
+                          <span class="icon"><i class="icon-cog"></i>> 5 лет опыта</span>
                         </div>
                         <div class="info-box text-right">
-                          <h3>10000-20000 грн/мес.</h3>
+                          <h3>15000 грн/мес.</h3>
                           <ul class="btn-list">
                             <li><a href="#" class="btn ye-btn">Горячее</a></li>
                             <li><a href="#" class="btn green">Новое</a></li>
                           </ul>
                         </div>
                       </div>
-                      <p><strong>Резюме:</strong> “Водительское удостоверение категории "В.Стаж вождения 16 лет ...” <a href="#">Подробнее</a></p>
+                      <p><strong>Описание вакансии:</strong> “Водительское удостоверение категории "В.Стаж вождения 16 лет. Личным-семейным водителем 15 лет. Работал на автомобилях...” <a href="#">Подробнее</a></p>
+                      <ul class="btn-list">
+                        <li><a href="#" class="btn">Частный дом</a></li>
+                        <li><a href="#" class="btn">Квартира</a></li>
+                        <li><a href="#" class="btn">Посуточно</a></li>
+                      </ul>
                       <div class="wrap-box">
                         <a href="#" class="del-btn pull-right">Удалить</a>
                       </div>
@@ -541,30 +518,33 @@
                   </div>
                   <div class="agent-block">
                     <div class="img-block alt">
-                      <a href="#"><img alt="image description" src="images/avatar8.jpg"></a>
-                      <p>Резюме опубликовано <time datetime="2015-08-23">23 августа 2015</time></p>
+                      <a href="#"><img alt="image description" src="images/partner-2.png"></a>
+                      <strong>Вакансия от кадрового агентства «Хозяюшка»</strong>
+                      <p>Вакансия размещена <time datetime="2015-08-23">23 августа 2015</time></p>
                     </div>
                     <div class="text">
                       <div class="wrap-box">
                         <div class="text-info">
-                          <h4>Вячеслав Петрович</h4>
-                          <div class="info-list">
-                            <div><i class="icon-briefcase"></i><strong>Водитель-телохранитель, водитель руководителя, личный водитель</strong></div>
-                            <div><i class="icon-location ye-icon"></i>Киев (Киевская область)</div>
-                            <ul class="person-info">
-                               <li><i class="icon-user"></i><span>51 год</span></li>
-                               <li><i class="icon-cog"></i><span>&gt; 20 лет опыта</span></li>
-                            </ul>
-                          </div>
+                          <h4>Нужна няня для девочки 4 лет, стоянка</h4>
+                          <address>
+                            <strong class="city">Киев (Киевская область, Печерский)</strong>  
+                          </address>
+                          <span class="icon"><i class="icon-cog"></i>> 5 лет опыта</span>
                         </div>
                         <div class="info-box text-right">
-                          <h3>20000 грн/мес.</h3>
+                          <h3>13000 грн/мес.</h3>
                           <ul class="btn-list">
+                          <li><a href="#" class="btn ye-btn">Горячее</a></li>
                             <li><a href="#" class="btn green">Новое</a></li>
                           </ul>
                         </div>
                       </div>
-                      <p><strong>Резюме:</strong> “Экстремальное вождение автомобилей всех категорий и мотоциклов . Опыт вождения...” <a href="#">Подробнее</a></p>
+                      <p><strong>Описание вакансии:</strong> “Нужна няня для девочки 4 лет, Работа в Киеве, с.Стоянка. График 5/2 без проживания Оплата: 13000 грн за месяц. Знаниеанглийского и французского языка. Обязанности...”  <a href="#">Подробнее</a></p>
+                      <ul class="btn-list">
+                        <li><a href="#" class="btn">Частный дом</a></li>
+                        <li><a href="#" class="btn">Квартира</a></li>
+                        <li><a href="#" class="btn">Посуточно</a></li>
+                      </ul>
                       <div class="wrap-box">
                         <a href="#" class="del-btn pull-right">Удалить</a>
                       </div>
@@ -624,6 +604,76 @@
                     <div class="wrap-box">
                       <a href="#" class="comments pull-right">1 комментарий</a>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="myModal5" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body alt">
+                  <h4 class="text-center">Заказать видео-резюме</h4>
+                  <p>Мы предлагаем повысить интерес к Вашему резюме, записав для Вас персональное рекламное видео. Наш специалист свяжется с Вами по скайпу, после предварительной подготовки и консультации, мы запишем по скайпу рекламное видео-резюме с Вами.</p>
+                  <p>На видео Вы расскажите о своих сильных сторонах как кандидата, опыте работы, знаниях, преимуществах. Мы поможем Вам составить интересное и привлекательное видео-резюме.</p>
+                  <p>В Вашем резюме будет опубликовано рекламное видео, что привлечет интерес большего количества работодателей.  Видео будет доступно к просмотру только проверенным работодателям и оплатившим доступ к контактам соискателей.</p>
+                  <p>Подайте заявку на запись видео-резюме и наш специалист свяжется с Вами по скайпу в ближайшее время</p>
+                  <div class="modal-form">
+                   <form action="#">
+                    <fieldset>
+                      <strong class="title text-center">Оформить заявку</strong>
+                        <div class="form-group">
+                          <input type="text" placeholder="Ваш логин в skype">
+                        </div>
+                        <div class="form-group">
+                          <button class="btn large blue" type="submit">Заказать</button>
+                        </div>
+                    </fieldset>
+                   </form>
+                  </div>
+                  <div class="info-block">
+                    <div class="vacation-block">
+                      <div class="ico-box">
+                        <i class="video"><img src="images/video.png" alt="image description"></i>
+                      </div>
+                      <div class="text-box text-left">
+                        <h4>Услуга «Видео-резюме» платная!</h4>
+                        <p>После подтверждения Вашей заявки и уточнения деталей со специалистом, Вам необходимо будет оплатить данную услугу</p>
+                        <p><strong>Стоимость записи видео-резюме: 80грн</strong></p>
+                        <a href="#" class="btn ye-btn">Оплатить услугу</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="myModal6" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body alt">
+                  <h4>Пройти проверку</h4>
+                  <p>Наш сервис основан на доверии.  Мы внедрили процедуру проверки документов, чтобы укрепить доверие внутри нашего сообщества и избежать мошенничества.</p>
+                  <p>Статус «Проверенного пользователя» повысит Вашу репутацию среди других кандидатов и привлечёт больше работодателей к Вашему резюме.</p>
+                  <p>Загрузите фото или отсканированное удостоверение личности, после их проверки, Вы получите статус Проверенного пользователя. Ваши данные не будут никому передаваться.</p>
+                  <div class="block-download">
+                    <div class="img-block">
+                      <img src="images/img-24.jpg" alt="image description">
+                    </div>
+                    <form action="#">
+                      <fieldset>
+                        <input type="file" data-jcf='{"buttonText": "Загрузить заново"}'>
+                      </fieldset>
+                    </form>
+                  </div>  
+                  <div class="info-block">
+                    <a href="#" class="pull-right btn green">Отправить на проверку</a>
                   </div>
                 </div>
               </div>
@@ -725,6 +775,8 @@
     <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
     <script src="js/jquery.main.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datepicker.ru.min.js"></script>
     <script type="text/javascript">
       if (navigator.userAgent.match(/IEMobile/10.0/)  navigator.userAgent.match(/MSIE 10.*Touch/)) {
       var msViewportStyle = document.createElement('style')
