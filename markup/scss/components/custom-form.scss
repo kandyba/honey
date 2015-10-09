@@ -50,9 +50,6 @@
 	.jcf-select-text {
 		margin: 0 35px 0 44px;
 	}
-	&.jcf-drop-active{
-		border:1px solid $grey-color;
-	}
 }
 
 .jcf-select {
@@ -82,7 +79,7 @@
 	overflow: hidden;
 	display: block;
 	font-size: 16px;
-	line-height: 26px;
+	line-height: 25px;
 	cursor:pointer;
 	margin:-1px 35px 0 9px;
 	color:#656565;

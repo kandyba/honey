@@ -1941,14 +1941,18 @@ h6{
 
 .textarea2{
   min-height:120px !important;
-  max-height:120px !important;
+  max-height:160px !important;
 }
 
 .form-frame{
-  padding:44px 0 0;
+  padding:40px 0 0;
   position:relative;
   margin:20px 0 0;
   overflow:hidden;
+  &.alt{
+    &:before{display:none;}
+    margin-top:0;
+  }
   &:before{
     border-top: 2px solid #f5f3ed;
     content: "";
@@ -2080,14 +2084,32 @@ h6{
   }
 }
 
+.col1{
+  float:left;
+  width: 30%;
+  margin:0 15px 10px 0;
+}
+
+.modal-content{
+  p{
+    line-height:24px;
+    span,
+    strong{
+      color:#1eb7bb;
+      font-style:italic;
+    }
+  }
+}
+.till{
+  margin:0 0 5px;
+}
 
 
 
 
 
 
-
-.invalid-massege{
+.invalid-message{
   color:$red;
   padding:5px 0 0;
   font-size:12px;
@@ -2096,7 +2118,7 @@ h6{
 
 .invalid{
   border-color: $red;
-  .invalid-massege{
+  .invalid-message{
     display:block;
   }
 }

@@ -821,9 +821,16 @@
   .agent-block .img-block p {
       margin: 0;
   }
+  .col1{
+    width:100%;
+  }
   #scroller{
     bottom:10px;
     right: 10px;
+  }
+  .modal-content p {
+    line-height: 18px;
+    font-size:14px;
   }
   .agent-block{
     .img-block{

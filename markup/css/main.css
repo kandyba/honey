@@ -356,9 +356,8 @@ textarea {
   border-radius: 3px;
   background: #fff;
   margin: 0 0 5px;
-  width: 100%;
   min-height: 180px;
-  max-height: 180px;
+  max-height: 220px;
   max-width: 100%;
   min-width: 100%;
   display: block;
@@ -2532,14 +2531,20 @@ h6 span {
 
 .textarea2 {
   min-height: 120px !important;
-  max-height: 120px !important;
+  max-height: 160px !important;
 }
 
 .form-frame {
-  padding: 44px 0 0;
+  padding: 40px 0 0;
   position: relative;
   margin: 20px 0 0;
   overflow: hidden;
+}
+.form-frame.alt {
+  margin-top: 0;
+}
+.form-frame.alt:before {
+  display: none;
 }
 .form-frame:before {
   border-top: 2px solid #f5f3ed;
@@ -2667,7 +2672,26 @@ h6 span {
   vertical-align: middle;
 }
 
-.invalid-massege {
+.col1 {
+  float: left;
+  width: 30%;
+  margin: 0 15px 10px 0;
+}
+
+.modal-content p {
+  line-height: 24px;
+}
+.modal-content p span,
+.modal-content p strong {
+  color: #1eb7bb;
+  font-style: italic;
+}
+
+.till {
+  margin: 0 0 5px;
+}
+
+.invalid-message {
   color: #f5483a;
   padding: 5px 0 0;
   font-size: 12px;
@@ -2677,7 +2701,7 @@ h6 span {
 .invalid {
   border-color: #f5483a;
 }
-.invalid .invalid-massege {
+.invalid .invalid-message {
   display: block;
 }
 
@@ -2739,9 +2763,6 @@ h6 span {
 .search-form .jcf-select .jcf-select-text {
   margin: 0 35px 0 44px;
 }
-.search-form .jcf-select.jcf-drop-active {
-  border: 1px solid #9d9d9d;
-}
 
 .jcf-select {
   display: inline-block;
@@ -2772,7 +2793,7 @@ h6 span {
   overflow: hidden;
   display: block;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 25px;
   cursor: pointer;
   margin: -1px 35px 0 9px;
   color: #656565;
@@ -5994,9 +6015,18 @@ a .text {
     margin: 0;
   }
 
+  .col1 {
+    width: 100%;
+  }
+
   #scroller {
     bottom: 10px;
     right: 10px;
+  }
+
+  .modal-content p {
+    line-height: 18px;
+    font-size: 14px;
   }
 
   .agent-block .img-block {
