@@ -200,6 +200,12 @@
       padding: 20px 10px 20px;
     }
   }
+  .search-form{
+    .col-md2{
+      padding:0 15px;
+      margin:0 0 10px;
+    }
+  }
   .info-box{
     padding:20px 0 0;
     font-size:15px;
@@ -248,7 +254,18 @@
     }
   }
   #content .search-form .opener-link {
-    margin: -36px 0 0;
+    margin: -30px 17px 0 0;
+    a{
+      color:#fff !important;
+    }
+  }
+  .filter-box .filter-list li{
+    margin:0 5px 0 0;
+  }
+  #content .search-form .opener-link {
+    margin: 10px 5px 0 0;
+    position:relative;
+    float:right;
   }
   .col-md2 {
     padding: 0 0 0 15px;
@@ -396,15 +413,23 @@
       }
     }
   }
-  .info-block dl dt, .agent-block dl dd { font-size: 14px; }
-  .btn-list .btn { padding: 2px 5px; }
-  .box-list { margin: 0; }
-  .agent-block .img-block.alt p { margin: 0 0 5px; }
-  .wrap-box .btn-list { margin: 0 5px 10px 0; }
-  .agent-block .wrap-box p { font-size: 14px; margin: 0 0 10px; }
+  .info-block dl dt,
+  .agent-block dl dd { font-size: 14px; }
+  .btn-list{
+    margin: 0;
+    .btn { padding: 2px 5px; }
+  }
+  .agent-block{
+    .img-block.alt p { margin: 0 0 5px; }
+    .wrap-box p { font-size: 14px; margin: 0 0 10px; }
+  }
   .text .text-info { margin: 0 0 12px; }
-  .wrap-box .btn-list li { margin: 0 4px 6px 0; }
-  .wrap-box .btn-list a { padding: 3px 7px 4px; }
+  .wrap-box .btn-list{
+    li{
+      margin: 0 4px 6px 0;
+    }
+    a { padding: 3px 7px 4px; }
+  }
   #sidebar .box-list li { border: none; }
   #footer{
     padding:28px 0 20px;
@@ -563,6 +588,9 @@
   }
   .modal-body.modal2 .checkbox label {
     max-width: 85%;
+  }
+  #content .search-form {
+    margin: 0 0 15px;
   }
   .form-frame {
     margin: 10px 0 0;
@@ -974,29 +1002,37 @@
     }
   }
   #main .employer-box h1 { margin: 0 0 10px; }
-  .employer-box { margin: 0; }
-  .employer-box p { margin: 0 0 10px; }
+  .employer-box {
+    margin: 0;
+    p { margin: 0 0 10px; }
+  }
   #sidebar ul li { text-align: center; }
   .agent-block .text-info h4 { margin: 0 0 5px; text-align: center; }
   .info-block { padding: 20px 0 0; margin: 0 0 20px; }
-  .socials .facebook a:before { left: 14px; top: 8px; }
-  .socials .twitter a:before { left: 10px; top: 8px; }
-  .socials .vk a:before { left: 11px; top: 6px; }
-  .socials .google a:before { left: 12px; top: 7px; }
+  .socials{
+    .facebook a:before { left: 14px; top: 8px; }
+    .twitter a:before { left: 10px; top: 8px; }
+    .vk a:before { left: 11px; top: 6px; }
+    .google a:before { left: 12px; top: 7px; }
+  }
   .img-block.alt > a { display: block; }
-  .agent-block .text-info {
-    float: none; width: 100%;
-    padding: 0 10px; margin: 0 0 5px;
-    display: inline-block;
-    vertical-align: top;
-    text-align:center;
+  .agent-block{
+    .text-info {
+      float: none; width: 100%;
+      padding: 0 10px; margin: 0 0 5px;
+      display: inline-block;
+      vertical-align: top;
+      text-align:center;
+    }
+    .info-box {
+      float: none; width: 100%; text-align: left;
+      padding: 0 10px;
+      text-align:center;
+    }
   }
-  .agent-block .info-box {
-    float: none; width: 100%; text-align: left;
-    padding: 0 10px;
-    text-align:center;
+  .info-block{
+    .box { float: none; width: 100%; padding: 0; margin: 0 0 10px; }
   }
-  .info-block .box { float: none; width: 100%; padding: 0; margin: 0 0 10px; }
   .info-block dl dd { margin: 0; font-size: 14px; }
   #content .title { font-size: 18px!important; font-weight: bold; }
   .info-block .list { margin: 0 0 15px; }
@@ -1018,10 +1054,6 @@
   .send-form-box.alt textarea { margin: 0; }
   .send-form-box.alt .form-row { margin: 0 0 15px; }
   .send-form-box.alt .send-form { margin: 0; }
-
-
-
-
   #footer{
     .col{
       width:100%;

@@ -68,9 +68,9 @@
   left: 0;
   top: 0;
   width:100%;
-}
-.slideshow .slide.active {
-  z-index: 2;
+  &.active {
+    z-index: 2;
+  }
 }
 .slideshow.not-enough-slides .btn-prev,
 .slideshow.not-enough-slides .btn-next {
@@ -551,7 +551,7 @@
     display: inline-block;
     vertical-align: top;
     text-align:left;
-    width: 43.5%;
+    width: 45.5%;
     padding: 42px 10px 40px 34px;
     .text{
       position:relative;
@@ -604,7 +604,13 @@
 .select-box{
   position:relative;
 }
-.form-group{overflow:hidden;}
+.form-group{
+  &:after{
+    content:'';
+    display:block;
+    clear:both;
+  }
+}
 
 .count2{
   display: inline-block;
@@ -633,7 +639,7 @@
   padding:30px 0;
   color:#8f8b8f;
   h1{
-    font-size:38px;
+    font-size:33px;
     font-weight:bold;
     margin:0 0 23px;
   }
@@ -643,65 +649,117 @@
     margin:0 0 10px;
     color:$base-black-color;
   }
-  .text-info{
-    h2{
-      font-size:25px;
-      line-height:30px;
-      margin:0 0 13px;
-    }
+}
+.text-info{
+  h2{
+    font-size:25px;
+    line-height:30px;
+    margin:0 0 13px;
   }
-  .title-box{
-    margin:0 0 7px;
-    &:after{
-      content:'';
-      display:block;
-      clear:both;
-    }
-    .btn{
-      padding:2px 12px;
-      font-size:12px;
-    }
-    h2{
-      font-size:25px;
-      margin:0 0 10px;
-      line-height:25px;
-      color:$blue-color;
-      font-weight:bold;
-    }
+}
+.title-box{
+  margin:0 0 7px;
+  &:after{
+    content:'';
+    display:block;
+    clear:both;
   }
-  .title-block{
-    margin:0 0 15px;
-    overflow:hidden;
-    line-height:24px;
-  }
-  .decor{
-    color:#f5483a;
+  .btn{
+    padding:2px 12px;
     font-size:12px;
-    margin:0 0 5px;
   }
-  .vacation-block{
-    font-size:26px;
-    padding:25px 31px 28px 31px;
-    border-color: 5px;
-    margin:0 0 50px;
-    .ico-box{
-      margin:0 40px 0 0;
-      i{
-        margin:-26% 0 0 -34%;
-      }
-    }
-    .text-box{
-      p{
-        font-size:15px;
-        line-height:20px;
-        margin:0 0 15px;
-      }
-      h4{
-        font-size:16px;
-        margin:0 0 10px;
-      }
+  h2{
+    font-size:25px;
+    margin:0 0 10px;
+    line-height:25px;
+    color:$blue-color;
+    font-weight:bold;
+  }
+}
+.title-block{
+  margin:0 0 15px;
+  overflow:hidden;
+  line-height:24px;
+}
+
+.vacation-block{
+  font-size:26px;
+  padding:25px 31px 28px 31px;
+  border-color: 5px;
+  margin:0 0 50px;
+  .ico-box{
+    margin:0 40px 0 0;
+    i{
+      margin:-26% 0 0 -34%;
     }
   }
+  .text-box{
+    p{
+      font-size:15px;
+      line-height:20px;
+      margin:0 0 15px;
+    }
+    h4{
+      font-size:16px;
+      margin:0 0 10px;
+    }
+  }
+}
+
+.datepicker.datepicker-dropdown.dropdown-menu {
+  display:block;
+   display: block;
+    left: 615.4px;
+    top: 426.3px;
+    z-index: 15;
+}
+.datepicker{
+  .dow{
+    color:#f7a300;
+  }
+  font-weight:bold;
+  .table-condensed > thead > tr > td,
+  .table-condensed > tbody > tr > td,
+  .table-condensed > tfoot > tr > td{
+    color:#20c6ca;
+  }
+  td,
+  th {
+    border-radius:14px !important;
+    &.today{
+      color:#fff !important;
+      background:#f7a300 !important;
+    }
+  }
+  .disabled.day{
+    color:#000;
+  }
+}
+
+#sandbox-container{
+  position:relative;
+  &:after{
+    position:absolute;
+    content:'';
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #9d9d9d transparent transparent;
+    border-image: none;
+    border-style: solid;
+    border-width: 8px 6px 6px;
+    content: "";
+    right: 7px;
+    position: absolute;
+    top: 17px;
+  }
+}
+
+.decor{
+  color:#f5483a;
+  font-size:12px;
+  margin:0 0 5px;
 }
 
 .input-placeholder-text{
@@ -721,22 +779,19 @@
   }
   .search-form{
     margin:0 0 35px;
+    fieldset{
+      position:relative;
+    }
     .select-box{
       margin:0 11px 5px 0;
-    }
-    .opener-link{
-      padding:7px 13px 0 0;
-      float:right;
-      margin:0;
-      a{
-        color:#fff;
-      }
     }
     .collapse{
       background:#5cced1;
       margin:0 -10px 15px;
       padding:0 10px;
       border-radius: 0 0 10px 10px;
+      position:relative;
+      z-index:5;
       .opener-link{
         padding:0;
         a{
@@ -759,6 +814,15 @@
       box-shadow: none;
       position:relative;
       font-size:14px;
+      .filter-box .filter-list a{
+        color:#fff;
+      }
+      .filter-box .filter-list li{
+        margin:0 6px 0 0;
+      }
+      .filter-box span a{
+        color:#fff;
+      }
       .jcf-select-text {
         margin: 0 35px 0 10px;
       }
@@ -849,6 +913,19 @@
   }
 }
 
+.opener-link{
+  margin-top:0;
+  position:absolute;
+  top:100%;
+  right: 0;
+  left: 0;
+  margin:17px -8px 0 0;
+}
+
+.filter-box{
+  overflow:hidden;
+}
+
 .col-md1{
   float:left;
   padding:0 15px;
@@ -914,38 +991,35 @@
     right:-35px;
   }
 }
-
-#main{
-  .employer-box h1{
-    font-size: 24px;
+.holder .search-form{
+  margin: 0 0 13px;
+  i{
+    color: #20c6ca;
   }
-  .holder .search-form{
-    margin: 0 0 13px;
-    i{
-      color: #20c6ca;
-    }
+}
+h2,h4{
+  span{
+    color: #20c6ca;
   }
-  h2,h4{
-    span{
-      color: #20c6ca;
-    }
-  }
-  .h1{
-    font-size: 24px;
-    line-height: 28px;
-  }
-  .h2{
-    font-size: 24px;
-    line-height: 28px;
-    color: #1eb9bd;
-    font-weight: bold;
-  }
+}
+.h1{
+  font-size: 24px;
+  line-height: 28px;
+}
+.h2{
+  font-size: 24px;
+  line-height: 28px;
+  color: #1eb9bd;
+  font-weight: bold;
 }
 .employer-box{
   margin: 0 0 30px;
   h2{
     font-size: 18px;
     margin: 0 0 15px;
+  }
+  h1{
+    font-size: 24px;
   }
 }
 .socials{
@@ -1963,18 +2037,6 @@ h6{
   }
 }
 
-/* .decor-line{
-  position:relative;
-  &:after{
-    border-top: 2px solid #f5f3ed;
-    content: "";
-    left: -35px;
-    position: absolute;
-    right: -35px;
-    top: 0;
-  }
-} */
-
 .row-text{
   overflow:hidden;
   h1{
@@ -2061,8 +2123,8 @@ h6{
 
 .tab-content{
   min-height:290px;
-  h2{
-    #main & {
+  #main & {
+    h2{
       font-size:16px;
       line-height:20px;
       margin:0 0 27px;
@@ -2086,7 +2148,7 @@ h6{
 
 .col1{
   float:left;
-  width: 30%;
+  width: 27%;
   margin:0 15px 10px 0;
 }
 
@@ -2105,10 +2167,6 @@ h6{
 }
 
 
-
-
-
-
 .invalid-message{
   color:$red;
   padding:5px 0 0;
@@ -2122,17 +2180,6 @@ h6{
     display:block;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
